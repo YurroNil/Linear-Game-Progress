@@ -1,0 +1,37 @@
+{
+  "parent": "lgp:chapter_2/enter_the_swamp",
+  "criteria": {
+    "kill_the_strangewitch": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:boss/is_strange_witch"
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"在沼泽生物群系找到沼泽小屋，并击杀诡异的女巫"}]},
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:potion",
+      "nbt": "{CustomPotionColor:6553600}"
+    },
+    "show_toast": true,
+    "title": "好像也没多诡异"
+  },
+  "requirements": [
+    [
+      "kill_the_strangewitch"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "lgp:advancement/chapter_2/kill_witchboss_rewards"
+  }
+}

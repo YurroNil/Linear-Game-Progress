@@ -1,0 +1,42 @@
+{
+  "parent": "lgp:chapter_2/plot_tips1",
+  "criteria": {
+    "jungle": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_biome/jungle"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "进入丛林生物群系",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:jungle_leaves"
+    },
+    "show_toast": true,
+    "title": "将狗！"
+  },
+  "requirements": [
+    [
+      "jungle"
+    ]
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "criteria": {
+    "start": {
+        "trigger": "minecraft:tick"
+    }
+  }
+}

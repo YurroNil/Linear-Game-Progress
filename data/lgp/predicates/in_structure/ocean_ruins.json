@@ -1,0 +1,41 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:ocean_ruin_cold"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:ocean_ruin_warm"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:shipwreck"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:shipwreck_beached"
+                }
+            }
+        }
+    ]
+}

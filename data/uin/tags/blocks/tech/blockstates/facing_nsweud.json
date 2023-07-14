@@ -1,0 +1,20 @@
+{
+	"values": [
+		"#minecraft:shulker_boxes",
+		"#uin:general/command_blocks",
+		"#uin:general/piston",
+		"minecraft:barrel",
+		"minecraft:dispenser",
+		"minecraft:dropper",
+		"minecraft:end_rod",
+		"minecraft:jigsaw",
+		"minecraft:observer",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"minecraft:amethyst_cluster"},
+		{"required":false,"id":"minecraft:large_amethyst_bud"},
+		{"required":false,"id":"minecraft:lightning_rod"},
+		{"required":false,"id":"minecraft:medium_amethyst_bud"},
+		{"required":false,"id":"minecraft:small_amethyst_bud"}
+	]
+}

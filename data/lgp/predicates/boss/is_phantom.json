@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:phantom",
+    "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.phantom\",\"lgp.location.mobReplaced\"]}"
+  }
+}

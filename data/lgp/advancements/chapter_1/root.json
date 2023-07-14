@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "impossible": {
+        "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/spruce_log.png",
+    "description": {"text":"新的开始"},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:oak_planks"
+    },
+    "show_toast": true,
+    "title": "第一章(村庄篇)"
+  }
+}

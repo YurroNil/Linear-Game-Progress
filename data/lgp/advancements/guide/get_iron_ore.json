@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/get_anvil",
+  "criteria": {
+    "iron_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用精准采集镐采集铁矿石.用铁矿石在熔炉冶炼不再是铁粒，而是铁锭了！",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:iron_ore"
+    },
+    "show_toast": true,
+    "title": "铁器时代"
+  },
+  "requirements": [
+    [
+      "iron_ore"
+    ]
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:guide/iron_armors_all",
+  "criteria": {
+      "impossible":{
+        "trigger": "impossible"
+      }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": "",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:book"
+    },
+    "show_toast": false,
+    "title": "序章结束"
+  }
+}

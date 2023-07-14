@@ -1,0 +1,17 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/mineshaft"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/stronghold"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/ancient_city"
+        }
+    ]
+}

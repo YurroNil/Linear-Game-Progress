@@ -1,0 +1,19 @@
+{
+	"values": [
+		"#uin:general/spiders",
+		"minecraft:bee",
+		"minecraft:dolphin",
+		"minecraft:enderman",
+		"minecraft:hoglin",
+		"minecraft:iron_golem",
+		"minecraft:llama",
+		"minecraft:panda",
+		"minecraft:piglin",
+		"minecraft:trader_llama",
+		"minecraft:wolf",
+		"minecraft:zombified_piglin",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"minecraft:goat"}
+	]
+}

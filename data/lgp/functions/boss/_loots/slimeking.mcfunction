@@ -1,0 +1,2 @@
+give @p minecraft:slime_ball{display:{Name:'{"text":"凝胶","italic":false,"color":"yellow"}',Lore:['{"text":"神秘的配方(丢地上)：神秘的药水+凝胶+蝌蚪桶.","color":"#ADFF2F","italic":false,"bold":true}','{"text":"合成地点：红树林沼泽","color":"#ADFF2F","italic":false,"bold":true}','{"text":" "}','{"text":"BOSS战利品","color":"blue","italic":false}']},lgpTags:"mysterious_gel"} 3
+function lgp:advancement/golden_apples_rewards

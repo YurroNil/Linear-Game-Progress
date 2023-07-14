@@ -1,0 +1,17 @@
+{
+	"values": [
+		"#minecraft:logs",
+		"minecraft:basalt",
+		"minecraft:bone_block",
+		"minecraft:chain",
+		"minecraft:hay_block",
+		"minecraft:nether_portal",
+		"minecraft:polished_basalt",
+		"minecraft:purpur_pillar",
+		"minecraft:quartz_pillar",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"minecraft:deepslate"},
+		{"required":false,"id":"minecraft:infested_deepslate"}
+	]
+}

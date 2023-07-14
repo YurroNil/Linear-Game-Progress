@@ -1,0 +1,2 @@
+summon item ~ ~ ~ {Item:{id:"minecraft:bee_spawn_egg",Count:1b,tag:{EntityTag:{id:"minecraft:marker",Tags:["lgp.beeQueen.marker"]},display:{Name:'{"text":"蜂后刷怪蛋","italic":false}',Lore:['{"text":"生成条件：需要在丛林生物群系内生成.","color":"#FFA500","italic":false,"bold":true}']},lgpTags:"beeQueen.spawnEgg"}},CustomName:'{"text":"蜂后刷怪蛋"}',CustomNameVisible:1b,Motion:[0.0d,0.3d,0.0d]}
+summon item ~ ~ ~ {Item:{id:"minecraft:bucket",Count:1b,tag:{}},CustomName:'{"text":"铁桶"}',CustomNameVisible:1b,Motion:[0.0d,0.3d,0.0d]}

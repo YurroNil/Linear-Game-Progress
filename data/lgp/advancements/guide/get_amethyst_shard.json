@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/wooden_shovel",
+  "criteria": {
+    "amethyst_shard": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:amethyst_shard"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"从砂砾中获取紫水晶碎片"}]},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "show_toast": true,
+    "title": "一闪一闪亮晶晶"
+  },
+  "requirements": [
+    [
+      "amethyst_shard"
+    ]
+  ]
+}

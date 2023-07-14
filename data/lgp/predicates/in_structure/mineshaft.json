@@ -1,0 +1,23 @@
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:mineshaft"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "structure": "minecraft:mineshaft_mesa"
+                }
+            }
+        }
+    ]
+}

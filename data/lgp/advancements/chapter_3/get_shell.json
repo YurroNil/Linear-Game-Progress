@@ -1,0 +1,45 @@
+{
+  "parent": "lgp:chapter_3/enter_the_ocean_ruin",
+  "criteria": {
+    "nautilus_shell": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:nautilus_shell"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 8
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "通过击杀拿着鹦鹉螺壳的溺尸、钓鱼或与流浪商人交易获取鹦鹉螺壳",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:nautilus_shell"
+    },
+    "show_toast": true,
+    "title": "这和鹦鹉有关系吗...？"
+  },
+  "requirements": [
+    [
+      "nautilus_shell"
+    ]
+  ]
+}

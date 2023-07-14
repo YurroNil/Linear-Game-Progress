@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:pillager",
+    "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.pillagerCaptain\",\"lgp.location.mobReplaced\"]}"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "impossible": {
+        "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/mud.png",
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:mangrove_leaves"
+    },
+    "show_toast": false,
+    "title": "第二章(湿地篇)"
+  }
+}

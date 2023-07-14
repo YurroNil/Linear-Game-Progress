@@ -1,0 +1,13 @@
+{
+ "values": [
+    "lgp:tick",
+    "#lgp:mob_modify/tick",
+    "#lgp:world/tick",
+    "#lgp:boss/tick",
+    "#lgp:player_modify/tick",
+    "#lgp:advancement/tick",
+    "#lgp:event/tick",
+    "#lgp:items/tick",
+    "#lgp:locations/tick"
+ ]
+}

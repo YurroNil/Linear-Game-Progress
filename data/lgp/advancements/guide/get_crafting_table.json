@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/get_woods",
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "制作一个工作台",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:crafting_table"
+    },
+    "show_toast": true,
+    "title": "这是？工作台！"
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

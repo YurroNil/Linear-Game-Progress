@@ -1,0 +1,1 @@
+give @s bee_spawn_egg{EntityTag:{id:"minecraft:marker",Tags:["lgp.beeQueen.marker"]},display:{Name:'{"text":"蜂后刷怪蛋","italic":false}',Lore:['{"text":"生成条件：需要在丛林生物群系内生成.","color":"#FFA500","italic":false,"bold":true}']},lgpTags:"beeQueen.spawnEgg"}

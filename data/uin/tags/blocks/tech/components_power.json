@@ -1,0 +1,20 @@
+{
+	"values": [
+		"#minecraft:buttons",
+		"#minecraft:pressure_plates",
+		"minecraft:daylight_detector",
+		"minecraft:detector_rail",
+		"minecraft:lectern",
+		"minecraft:lever",
+		"minecraft:observer",
+		"minecraft:redstone_block",
+		"minecraft:redstone_torch",
+		"minecraft:redstone_wall_torch",
+		"minecraft:trapped_chest",
+		"minecraft:tripwire_hook",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"minecraft:lightning_rod"},
+		{"required":false,"id":"minecraft:sculk_sensor"}
+	]
+}

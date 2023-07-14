@@ -1,0 +1,24 @@
+
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:frozen_ocean"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:deep_frozen_ocean"
+                }
+            }
+        }
+    ]
+}

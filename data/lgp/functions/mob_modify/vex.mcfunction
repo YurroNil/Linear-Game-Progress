@@ -1,0 +1,1 @@
+execute if score level lgp.world matches 1 run effect give @e[type=vex] weakness 2 1 true

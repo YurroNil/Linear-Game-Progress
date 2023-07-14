@@ -1,0 +1,45 @@
+{
+  "parent": "lgp:chapter_2/kill_slimeking",
+  "criteria": {
+    "bred_frogs": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:frog"
+            }
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用粘液球喂食两只青蛙繁殖后代",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:frogspawn"
+    },
+    "show_toast": true,
+    "title": "青蛙吃萤火虫会死！"
+  },
+  "requirements": [
+    ["bred_frogs"]
+  ]
+}

@@ -1,0 +1,165 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "bonus_rolls": 0.0,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 3.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:enchanted_golden_apple",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 1.0,
+                  "min": -2.0
+                }
+              }
+            ],
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 3.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:gold_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 3.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:lapis_lazuli",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 3.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:emerald",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 5.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:tnt",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 2.0,
+                  "min": -2.0
+                }
+              }
+            ],
+            "weight": 7
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:totem_of_undying",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 2.0,
+                  "min": -2.0
+                }
+              }
+            ],
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 1.0,
+                  "min": 0.0
+                }
+              }
+            ],
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:amethyst_shard",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 5.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 15
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:copper_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 5.0,
+                  "min": 1.0
+                }
+              }
+            ],
+            "weight": 15
+          }
+        ],
+        "rolls": 15.0
+      }
+    ]
+  }

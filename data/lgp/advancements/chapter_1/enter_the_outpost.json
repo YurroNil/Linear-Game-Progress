@@ -1,0 +1,42 @@
+{
+  "parent": "lgp:chapter_1/plot_tips1",
+  "criteria": {
+    "in_the_pillager_outpost": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/pillager_outpost"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 1
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"进入掠夺者前哨站"},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:iron_sword"
+    },
+    "show_toast": true,
+    "title": "这是...？"
+  },
+  "requirements": [
+    [
+      "in_the_pillager_outpost"
+    ]
+  ]
+}

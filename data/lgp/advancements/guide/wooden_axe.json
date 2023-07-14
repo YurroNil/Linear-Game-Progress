@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/get_crafting_table",
+  "criteria": {
+    "wooden_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wooden_axe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用皮革、木板和木棍在工作台合成一把木斧",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:wooden_axe"
+    },
+    "show_toast": true,
+    "title": "木头居然也要对应工具？"
+  },
+  "requirements": [
+    [
+      "wooden_axe"
+    ]
+  ]
+}

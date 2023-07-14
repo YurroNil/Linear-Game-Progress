@@ -1,0 +1,1 @@
+execute unless entity @e[tag=lgp.elderGuardian.bossType3,distance=..100] run tag @s add lgp.elderGuardian.bossType3

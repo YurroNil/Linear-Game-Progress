@@ -1,0 +1,34 @@
+{
+  "parent": "lgp:_functions/root",
+  "criteria": {
+    "dark_forest": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_biome/dark_forest"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 4}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "dark_forest"
+    ]
+  ],
+	"rewards": {
+		"function": "lgp:player_modify/effects/damaged/dark_damage"
+	}
+}

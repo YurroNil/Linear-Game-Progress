@@ -1,0 +1,17 @@
+{
+  "parent": "lgp:guide/deflect_arrow",
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "遇到恐怖之翼.记得离它远点！",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:phantom_membrane"
+    },
+    "show_toast": true,
+    "title": "当一个大BOSS跑进新手村会发生什么呢？"
+  }
+}

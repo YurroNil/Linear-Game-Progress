@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:string"
+    },
+    "A": {
+      "tag": "lgp:hard_metal_blocks"
+    }
+  },
+  "pattern": [
+    "  #",
+    " #X",
+    "#AX"
+  ],
+  "result": {
+    "item": "minecraft:fishing_rod"
+  },
+  "show_notification": true
+}

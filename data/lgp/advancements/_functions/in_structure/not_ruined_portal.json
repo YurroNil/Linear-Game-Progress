@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:_functions/root",
+  "criteria": {
+    "not_ruined_portal": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/tech/not_ruined_portal"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_dimension/overworld"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.allow_entherTheNether": 1
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    ["not_ruined_portal"]
+  ],
+	"rewards": {
+		"function": "lgp:locations/worldgen_loop/protal/the_nether/notallow_enter"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "criteria": {
+    "impossible": {
+        "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "minecraft:textures/block/dark_prismarine.png",
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:sea_lantern"
+    },
+    "show_toast": false,
+    "title": "第三章(海洋篇)"
+  }
+}

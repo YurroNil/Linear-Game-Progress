@@ -1,0 +1,30 @@
+{
+  "parent": "lgp:chapter_1/kill_the_ravager",
+  "criteria": {
+    "hero_of_the_village": {
+      "conditions": {},
+      "trigger": "minecraft:hero_of_the_village"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"成功在袭击中保卫村庄\n\n"},{"text":"进度完成奖励：附魔木剑*1,附魔书*1,金苹果系列","color":"yellow"}]},
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:white_banner",
+      "nbt": "{BlockEntityTag:{Patterns:[{Color:9,Pattern:\"mr\"},{Color:8,Pattern:\"bs\"},{Color:7,Pattern:\"cs\"},{Color:8,Pattern:\"bo\"},{Color:15,Pattern:\"ms\"},{Color:8,Pattern:\"hh\"},{Color:8,Pattern:\"mc\"},{Color:15,Pattern:\"bo\"}],id:\"minecraft:banner\"},HideFlags:32,display:{Name:'{\"color\":\"gold\",\"translate\":\"block.minecraft.ominous_banner\"}'}}"
+    },
+    "show_toast": true,
+    "title": "村庄英雄       "
+  },
+  "requirements": [
+    [
+      "hero_of_the_village"
+    ]
+  ],
+  "rewards": {
+    "experience": 100,
+    "function": "lgp:advancement/chapter_1/hero_ofthe_village_rewards"
+  }
+}

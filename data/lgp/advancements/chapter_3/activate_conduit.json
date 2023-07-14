@@ -1,0 +1,29 @@
+{
+  "parent": "lgp:chapter_3/get_seaheart",
+  "criteria": {
+    "activate_conduit": {
+      "conditions": {
+        "effects": {
+          "minecraft:conduit_power": {}
+        }
+      },
+      "trigger": "minecraft:effects_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用鹦鹉螺壳与海洋之心合成的潮涌核心并成功激活",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:conduit"
+    },
+    "show_toast": true,
+    "title": "我充满了能量！"
+  },
+  "requirements": [
+    [
+      "activate_conduit"
+    ]
+  ]
+}

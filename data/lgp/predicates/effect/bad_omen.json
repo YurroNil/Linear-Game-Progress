@@ -1,0 +1,7 @@
+{
+"condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "effects": {"bad_omen":{"amplifier":{"max":255,"min":0}}}
+    }
+}

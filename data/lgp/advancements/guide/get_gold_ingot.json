@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/get_gold_nugget",
+  "criteria": {
+    "gold_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"合成一块金锭"}]},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:gold_ingot"
+    },
+    "show_toast": true,
+    "title": "来软的"
+  },
+  "requirements": [
+    [
+      "gold_ingot"
+    ]
+  ]
+}

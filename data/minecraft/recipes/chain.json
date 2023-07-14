@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chains",
+  "key": {
+    "I": {
+      "tag": "lgp:hard_metal_ingots"
+    },
+    "N": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "N",
+    "I",
+    "N"
+  ],
+  "result": {
+    "item": "minecraft:chain"
+  },
+  "show_notification": true
+}

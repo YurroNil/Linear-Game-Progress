@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:locations/biome_mobs/is_safe_biome",
+    "lgp:locations/biome_mobs/dark_forest",
+
+    "lgp:locations/biome_mobs/jungle",
+    "lgp:locations/biome_mobs/swamps",
+
+    "lgp:locations/biome_mobs/ocean_all",
+
+    "lgp:locations/biome_mobs/arid",
+    "lgp:locations/biome_mobs/snowy_all",
+
+    "lgp:locations/biome_mobs/dripstone_caves",
+    "lgp:locations/biome_mobs/lush_caves",
+    "lgp:locations/biome_mobs/normal_caves"
+  ]
+}

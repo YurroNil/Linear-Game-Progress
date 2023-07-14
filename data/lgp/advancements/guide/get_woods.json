@@ -1,0 +1,31 @@
+{
+  "parent": "lgp:guide/plot_tips1",
+  "criteria": {
+    "get_woods": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "lgp:woods"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "通过村庄或掠夺者前哨站获取木板或木头",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:oak_log"
+    },
+    "show_toast": true,
+    "title": "想致富先访村！"
+  },
+  "requirements": [
+    [
+      "get_woods"
+    ]
+  ]
+}

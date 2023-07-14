@@ -1,0 +1,37 @@
+
+{
+    "condition": "any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:lush_caves"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:dripstone_caves"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:deep_dark"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_biome/tech/height_below_45"
+        }
+    ]
+}

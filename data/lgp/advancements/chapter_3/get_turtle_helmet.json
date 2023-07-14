@@ -1,0 +1,37 @@
+{
+  "parent": "lgp:chapter_3/get_turtle_egg",
+  "criteria": {
+    "turtle_helmet": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:turtle_helmet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "使用小海龟长大后掉落的鳞甲制作一顶海龟壳",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:turtle_helmet"
+    },
+    "show_toast": true,
+    "title": "生态环保绿"
+  },
+  "requirements": [
+    [
+      "turtle_helmet"
+    ]
+  ],
+  "rewards": {
+    "function": "lgp:advancement/chapter_3/get_turtle_helmet_rewards"
+  }
+
+}

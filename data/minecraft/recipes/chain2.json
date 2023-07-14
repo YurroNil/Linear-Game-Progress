@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "chains",
+  "key": {
+    "I": {
+      "tag": "lgp:coppers_and_nuggets"
+    },
+    "N": {
+      "tag": "lgp:hard_metal_ingots"
+    }
+  },
+  "pattern": [
+    "N",
+    "I",
+    "N"
+  ],
+  "result": {
+    "item": "minecraft:chain"
+  },
+  "show_notification": true
+}

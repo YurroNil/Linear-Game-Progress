@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:wither",
+    "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.wither\",\"lgp.location.mobReplaced\"]}"
+  }
+}

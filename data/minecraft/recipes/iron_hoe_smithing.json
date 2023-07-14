@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "addition": {
+    "item": "minecraft:iron_block"
+  },
+  "base": {
+    "item": "minecraft:stone_hoe"
+  },
+  "result": {
+    "item": "minecraft:iron_hoe"
+  }
+}

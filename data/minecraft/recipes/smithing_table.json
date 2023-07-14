@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "@": {
+      "item": "minecraft:gold_ingot"
+    },
+    "A": {
+      "tag": "lgp:hard_metal_ingots"
+    }
+  },
+  "pattern": [
+    "@@@",
+    "#A#",
+    "###"
+  ],
+  "result": {
+    "item": "minecraft:smithing_table"
+  },
+  "show_notification": true
+}

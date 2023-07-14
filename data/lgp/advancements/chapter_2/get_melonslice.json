@@ -1,0 +1,46 @@
+{
+  "parent": "lgp:chapter_2/get_honeycomb",
+  "criteria": {
+    "get_melon_slice": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:melon_slice"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:melon_slice"
+    },
+    "show_toast": true,
+    "title": "获取西瓜片"
+  },
+  "requirements": [
+    [
+      "get_melon_slice"
+    ]
+  ]
+}

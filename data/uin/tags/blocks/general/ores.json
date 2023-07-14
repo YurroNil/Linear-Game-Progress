@@ -1,0 +1,17 @@
+{
+	"values": [
+		"#minecraft:gold_ores",
+		"minecraft:ancient_debris",
+		"minecraft:coal_ore",
+		"minecraft:diamond_ore",
+		"minecraft:emerald_ore",
+		"minecraft:iron_ore",
+		"minecraft:lapis_ore",
+		"minecraft:nether_quartz_ore",
+		"minecraft:redstone_ore",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"#minecraft:copper_ores"},
+		{"required":false,"id":"#uin:general/deepslate_ores"}
+	]
+}

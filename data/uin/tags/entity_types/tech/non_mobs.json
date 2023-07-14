@@ -1,0 +1,9 @@
+{
+	"values": [
+		"#uin:tech/blocks",
+		"#uin:tech/items",
+		"#uin:tech/misc",
+		"#uin:tech/projectiles",
+		"#uin:tech/vehicles"
+	]
+}

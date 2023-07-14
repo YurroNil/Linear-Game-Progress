@@ -1,0 +1,15 @@
+{
+    "function": "copy_nbt",
+    "source": {
+        "type": "minecraft:storage",
+        "source": "minecraft:lgp.radar_pos"
+    },
+
+    "ops": [
+        {
+            "source": "LodestonePos",
+            "target": "LodestonePos",
+            "op": "replace"
+        }
+    ]
+}

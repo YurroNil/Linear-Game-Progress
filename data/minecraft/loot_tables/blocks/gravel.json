@@ -1,0 +1,176 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:any_ofs",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:gravel"
+            },
+            {
+              "type": "minecraft:any_ofs",
+              "conditions": [
+                {
+                  "condition": "minecraft:survives_explosion"
+                }
+              ],
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.21, 0.174285715, 0.185]
+                    }
+                  ],
+                  "name": "minecraft:flint"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.06, 0.1014285715, 0.0525]
+                    }
+                  ],
+                  "name": "minecraft:gold_nugget"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.02, 0.0914285715, 0.0125]
+                    }
+                  ],
+                  "name": "minecraft:iron_nugget"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.06, 0.0714285715, 0.06025]
+                    }
+                  ],
+                  "name": "minecraft:amethyst_shard"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.002, 0.0114285715, 0.0095]
+                    }
+                  ],
+                  "name": "minecraft:diamond"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.005, 0.0314285715, 0.0105]
+                    }
+                  ],
+                  "name": "minecraft:emerald"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    },
+                    {
+                      "condition": "minecraft:table_bonus",
+                      "enchantment": "minecraft:fortune",
+                      "chances": [0.002, 0.0114285715, 0.0095]
+                    }
+                  ],
+                  "name": "minecraft:prismarine_crystals"
+                },
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "lgp:shovel"
+                      }
+                    }
+                  ],
+                  "name": "minecraft:gravel"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

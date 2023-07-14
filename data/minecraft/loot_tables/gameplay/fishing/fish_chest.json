@@ -1,0 +1,67 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:cod",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "max": 5.0,
+                  "min": 1.0
+                }
+              }
+            ],
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:salmon",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 3.0,
+                "min": 1.0
+              }
+            }
+          ],
+          "weight": 25
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tropical_fish",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 3.0,
+                "min": 0.0
+              }
+            }
+          ],
+          "weight": 12
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:pufferfish",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "max": 2.0,
+                "min": 1.0
+              }
+            }
+          ],
+          "weight": 13
+        }
+      ],
+      "rolls": 5.0
+    }
+  ]
+}

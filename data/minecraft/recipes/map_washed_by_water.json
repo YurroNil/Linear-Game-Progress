@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "maps",
+  "ingredients": [
+    {
+      "item": "minecraft:filled_map"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result": {
+    "item": "minecraft:map"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,32 @@
+{
+	"values": [
+		"minecraft:bee",
+		"minecraft:cat",
+		"minecraft:chicken",
+		"minecraft:cow",
+		"minecraft:donkey",
+		"minecraft:fox",
+		"minecraft:hoglin",
+		"minecraft:horse",
+		"minecraft:llama",
+		"minecraft:mooshroom",
+		"minecraft:mule",
+		"minecraft:ocelot",
+		"minecraft:panda",
+		"minecraft:pig",
+		"minecraft:polar_bear",
+		"minecraft:rabbit",
+		"minecraft:sheep",
+		"minecraft:skeleton_horse",
+		"minecraft:strider",
+		"minecraft:trader_llama",
+		"minecraft:turtle",
+		"minecraft:villager",
+		"minecraft:wolf",
+		"minecraft:zombie_horse",
+
+		{"required":false,"id":"n/a","version":1.17},
+		{"required":false,"id":"minecraft:axolotl"},
+		{"required":false,"id":"minecraft:goat"}
+	]
+}

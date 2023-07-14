@@ -1,0 +1,1 @@
+data merge entity @s {Tags:["lgp.BOSS","lgp.wither"],HandDropChances:[0.0f,0.0f],ArmorDropChances:[0.0f,0.0f,0.0f,0.0f],Attributes:[{Name:"minecraft:generic.max_health",Base:500.0d},{Name:"minecraft:generic.armor",Base:100.0d},{Name:"minecraft:generic.armor_toughness",Base:200.0d}],Health:500.0f}

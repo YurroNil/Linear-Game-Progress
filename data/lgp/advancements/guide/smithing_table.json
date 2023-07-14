@@ -1,0 +1,34 @@
+{
+  "parent": "lgp:guide/get_iron_ingot",
+  "criteria": {
+    "smithing_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:smithing_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"用三块金锭、一块铁锭和四个木板合成一个锻造台\n\n"},{"text":"进度完成奖励：指南针*1,磁石*1","color":"yellow"}]},
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:smithing_table"
+    },
+    "show_toast": true,
+    "title": "工作台的时代结束了"
+  },
+  "requirements": [
+    ["smithing_table"]
+  ],
+  "rewards": {
+    "function": "lgp:advancement/guide/compass_and_lodestone_rewards"
+  }
+}

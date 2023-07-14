@@ -1,0 +1,34 @@
+{
+  "parent": "lgp:chapter_2/activate_conduit",
+  "criteria": {
+    "monument": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/monument"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 8}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "monument"
+    ]
+  ],
+	"rewards": {
+		"function": "lgp:player_modify/effects/damaged/drown_damage"
+	}
+}

@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:chapter_4/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": {"text":"","extra":[{"text":"建议完成进度：第三章/旱地分支/我的天好大一果冻！","color":"gold"}]},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:ice"
+    },
+    "show_toast": true,
+    "title": "寒地分支"
+  }
+}

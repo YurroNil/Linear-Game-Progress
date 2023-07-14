@@ -1,0 +1,190 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:golden_apple",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_ingot",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_ingot",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald",
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:tnt",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:totem_of_undying",
+          "weight": 3
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"宝藏板条箱\",\"italic\":false,\"color\":\"yellow\"}',Lore:['{\"text\":\"高级盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:gameplay/fishing/treasure_chest\"}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:gameplay/fishing/junk_chest\"}}"
+            }
+          ],
+          "weight": 20
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:gameplay/fishing/fish_chest\"}}"
+            }
+          ],
+          "weight": 18
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/desert_pyramid\"}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/ruined_portal\"}}"
+            }
+          ],
+          "weight": 10
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/pillager_outpost\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/igloo_chest\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/simple_dungeon\"}}"
+            }
+          ],
+          "weight": 13
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/shipwreck_supply\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/village/village_weaponsmith\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/village/village_toolsmith\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/village/village_taiga_house\"}}"
+            }
+          ],
+          "weight": 15
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:barrel",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Name:'{\"text\":\"普通板条箱\",\"italic\":false,\"color\":\"aqua\"}',Lore:['{\"text\":\"普通盲盒儿\",\"italic\":false,\"color\":\"white\"}']},BlockEntityTag:{LootTable:\"minecraft:chests/village/village_snowy_house\"}}"
+            }
+          ],
+          "weight": 15
+        }
+      ],
+      "rolls": 1.0
+    }
+  ]
+}

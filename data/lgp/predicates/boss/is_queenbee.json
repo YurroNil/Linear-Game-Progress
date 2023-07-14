@@ -1,0 +1,8 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+      "type": "minecraft:bee",
+      "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.beeQueen\",\"lgp.location.mobReplaced\"]}"
+    }
+}

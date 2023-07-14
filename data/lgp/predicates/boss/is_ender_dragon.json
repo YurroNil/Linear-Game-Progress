@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:ender_dragon",
+    "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.enderDragon\",\"lgp.location.mobReplaced\"]}"
+  }
+}

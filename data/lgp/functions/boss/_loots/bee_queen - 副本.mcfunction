@@ -1,0 +1,1 @@
+function lgp:advancement/golden_apples_rewards

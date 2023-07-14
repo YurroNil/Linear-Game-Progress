@@ -1,0 +1,45 @@
+{
+  "parent": "lgp:chapter_3/enter_the_ocean_ruin",
+  "criteria": {
+    "heart_of_the_sea": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:heart_of_the_sea"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 8
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "通过藏宝图指向的宝藏找到海洋之心",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:heart_of_the_sea"
+    },
+    "show_toast": true,
+    "title": "大海的心"
+  },
+  "requirements": [
+    [
+      "heart_of_the_sea"
+    ]
+  ]
+}

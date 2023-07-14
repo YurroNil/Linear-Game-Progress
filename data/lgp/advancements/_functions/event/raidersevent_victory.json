@@ -1,0 +1,17 @@
+{
+  "parent": "lgp:_functions/root",
+  "criteria": {
+    "raidersevent_victory": {
+      "conditions": {},
+      "trigger": "minecraft:hero_of_the_village"
+    }
+  },
+  "requirements": [
+    [
+      "raidersevent_victory"
+    ]
+  ],
+  "rewards": {
+    "function": "lgp:event/raiders/victory"
+  }
+}

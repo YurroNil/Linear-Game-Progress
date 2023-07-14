@@ -1,0 +1,8 @@
+{
+  "condition": "minecraft:entity_properties",
+  "entity": "this",
+  "predicate": {
+    "type": "minecraft:witch",
+    "nbt": "{Tags:[\"lgp.BOSS\",\"lgp.strangeWitch\",\"lgp.location.mobReplaced\"]}"
+  }
+}

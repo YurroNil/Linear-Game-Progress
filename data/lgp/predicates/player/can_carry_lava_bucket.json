@@ -1,0 +1,28 @@
+{
+"condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "effects": {
+                    "fire_resistance":{
+                        "amplifier":{"max":255,"min":0}
+                    }
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+                "equipment": {
+                    "head": {"items": ["minecraft:netherite_helmet"]},
+                    "chest": {"items": ["minecraft:netherite_chestplate"]},
+                    "legs": {"items": ["minecraft:netherite_leggings"]},
+                    "feet": {"items": ["minecraft:netherite_boots"]}
+                }
+            }
+        }
+    ]
+}

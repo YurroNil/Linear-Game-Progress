@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide/get_copper_ingot",
+  "criteria": {
+    "chain": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:chain"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用铁粒、铁锭或铜锭合成一条锁链",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:chain"
+    },
+    "show_toast": true,
+    "title": "获得锁链"
+  },
+  "requirements": [
+    [
+      "chain"
+    ]
+  ]
+}

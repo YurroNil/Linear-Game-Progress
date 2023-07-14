@@ -1,0 +1,14 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:mob_modify/tick",
+    "lgp:mob_modify/panda/tick",
+    "lgp:mob_modify/pillager",
+    "lgp:mob_modify/villager/tick",
+    "lgp:mob_modify/vex",
+    "lgp:mob_modify/ravager",
+    "lgp:mob_modify/vindicator",
+    "lgp:mob_modify/iron_golem"
+
+  ]
+}

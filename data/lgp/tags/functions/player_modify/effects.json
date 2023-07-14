@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:player_modify/effects/damaged/status",
+    "lgp:player_modify/effects/bad_omen"
+  ]
+}

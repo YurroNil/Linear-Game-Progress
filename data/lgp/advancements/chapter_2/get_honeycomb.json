@@ -1,0 +1,44 @@
+{
+  "parent": "lgp:chapter_2/get_honey_bottle",
+  "criteria": {
+    "get_honeycomb": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:honeycomb"
+            ]
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:honeycomb"
+    },
+    "show_toast": true,
+    "title": "获取蜜脾"
+  },
+  "requirements": [
+    [
+      "get_honeycomb"
+    ]
+  ]
+}

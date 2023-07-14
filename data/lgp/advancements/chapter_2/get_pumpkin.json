@@ -1,0 +1,45 @@
+{
+  "parent": "lgp:chapter_2/enter_the_jungle",
+  "criteria": {
+    "get_pumpkin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:pumpkin"
+            ]
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:pumpkin"
+    },
+    "show_toast": true,
+    "title": "获取南瓜"
+  },
+  "requirements": [
+    [
+      "get_pumpkin"
+    ]
+  ]
+}

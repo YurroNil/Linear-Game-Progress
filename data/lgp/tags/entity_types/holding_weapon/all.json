@@ -1,0 +1,10 @@
+{
+"replace": false,
+    "values": [
+        "#lgp:holding_weapon/axes",
+        "#lgp:holding_weapon/bow",
+        "#lgp:holding_weapon/crossbow",
+        "#lgp:holding_weapon/sword",
+        "#lgp:holding_weapon/trident"
+    ]
+}
