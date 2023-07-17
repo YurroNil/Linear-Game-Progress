@@ -42,4 +42,3 @@ gamerule reducedDebugInfo true
 difficulty hard
 datapack disable "mod:forge"
 
-say 123

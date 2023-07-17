@@ -1,0 +1,21 @@
+{
+    "name": "charpter_1",
+    "son": {
+        "name": "plots_tips1",
+        "son": {
+            
+        }
+        "name": "plot_tips2",
+        "son": {
+
+        }
+    }
+}
+
+{
+    "name": "root",
+    "son": {
+
+    }
+}
+

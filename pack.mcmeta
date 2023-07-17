@@ -1,29 +1,32 @@
-﻿{
-  "pack": {
-    "pack_format": 12,
-    "description": {
-      "text": "线性游戏流程数据包\n数据包作者: ",
-      "extra": [
-        {
-          "text": "Yurro_nil\n",
-          "color": "#B22222"
-        },
-        {
-          "text": "版本: "
-        },
-        {
-          "text": "beta001(2023.5.8)",
-          "color": "#00CED1"
+{
+    "pack": {
+        "pack_format": 12,
+        "description": {
+            "text": "线性游戏流程数据包\n",
+            "extra": [
+                {
+                    "text": "数据包作者: "
+                },
+                {
+                    "text": "Yurro_nil\n",
+                    "color": "#B22222"
+                },
+                {
+                    "text": "版本: "
+                },
+                {
+                    "text": "beta001(2023.5.8)",
+                    "color": "#00CED1"
+                }
+            ]
         }
-      ]
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements"
+            }
+        ]
     }
-  },
-  "filter": {
-    "block": [
-      {
-        "namespace": "minecraft",
-        "path": "advancements"
-      }
-    ]
-  }
 }
