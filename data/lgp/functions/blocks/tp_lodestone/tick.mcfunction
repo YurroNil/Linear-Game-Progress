@@ -14,4 +14,5 @@
     execute as @e[tag=lgp.lodestone] at @s run function lgp:blocks/tp_lodestone/select_destination/tick
 
 #计时器
-    execute as @e[tag=lgp.lodestone] at @s run function lgp:blocks/tp_lodestone/timer/tick
+    execute at @e[tag=lgp.lodestone] positioned ~-0.5 ~1 ~0.5 as @p[dx=0.5,dy=0.5,dz=0.5] at @s run function lgp:blocks/tp_lodestone/timer/tick
+
