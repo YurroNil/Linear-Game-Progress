@@ -25,6 +25,12 @@
     scoreboard objectives add lgp.radarMode dummy
     scoreboard objectives add lgp.radar.rightClick dummy
 
+    #方块
+    scoreboard objectives add lgp.tp_lodestone.rightClick dummy
+    scoreboard objectives add lgp.tp_lodestone.leftClick dummy
+    scoreboard objectives add lgp.tp_lodestone.index dummy
+    scoreboard objectives add lgp.tp_lodestone.time dummy
+
     #玩家
     scoreboard objectives add player.air air
     scoreboard objectives add player.hunger food
