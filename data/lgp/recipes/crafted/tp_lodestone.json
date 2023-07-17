@@ -1,0 +1,22 @@
+{
+  "type": "crafting_shaped",
+  "pattern": [
+    "ABA",
+    "BCB",
+    "ABA"
+  ],
+  "key": {
+	"A": {
+      "item": "minecraft:amethyst_block"
+    },
+    "B": {
+      "item": "minecraft:ender_pearl"
+    },
+    "C": {
+      "item": "minecraft:lodestone"
+    }
+  },
+  "result": {
+    "item": "minecraft:knowledge_book"
+  }
+}

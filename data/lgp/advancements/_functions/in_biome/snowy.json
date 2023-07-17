@@ -27,6 +27,6 @@
     ["snowy"]
   ],
 	"rewards": {
-		"function": "lgp:player_modify/effects/damaged/freeze_damage"
+		"function": "lgp:entities/player_modify/effects/damaged/freeze_damage"
 	}
 }

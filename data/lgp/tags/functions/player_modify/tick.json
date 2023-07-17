@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "lgp:player_modify/tags",
-    "#lgp:player_modify/effects",
-    "lgp:player_modify/easy_mode/tick",
-    "#lgp:player_modify/blocks"
-  ]
-}

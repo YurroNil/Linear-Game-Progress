@@ -6,7 +6,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:boss/is_pillager_captain"
+            "name": "lgp:entities/boss/is_pillager_captain"
           }
         ]
       },
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "lgp:boss/pillager_captain/bekilled"
+    "function": "lgp:entities/boss/pillager_captain/bekilled"
   }
 }

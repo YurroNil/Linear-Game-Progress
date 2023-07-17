@@ -27,6 +27,6 @@
     ["in_the_nether"]
   ],
 	"rewards": {
-		"function": "lgp:player_modify/effects/damaged/nether_damage"
+		"function": "lgp:entities/player_modify/effects/damaged/nether_damage"
 	}
 }

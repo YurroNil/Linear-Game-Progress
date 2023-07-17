@@ -6,7 +6,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:boss/is_strange_witch"
+            "name": "lgp:entities/boss/is_strange_witch"
           }
         ]
       },
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "lgp:boss/strange_witch/bekilled"
+    "function": "lgp:entities/boss/strange_witch/bekilled"
   }
 }

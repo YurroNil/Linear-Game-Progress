@@ -6,7 +6,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:boss/is_phantom"
+            "name": "lgp:entities/boss/is_phantom"
           }
         ]
       },
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "lgp:boss/phantom/bekilled"
+    "function": "lgp:entities/boss/phantom/bekilled"
   }
 }

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:entities/player_modify/tags",
+    "#lgp:entities/player_modify/effects",
+    "lgp:entities/player_modify/easy_mode/tick",
+    "#lgp:entities/player_modify/blocks"
+  ]
+}

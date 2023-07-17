@@ -27,6 +27,6 @@
     ["in_the_end"]
   ],
 	"rewards": {
-		"function": "lgp:player_modify/effects/damaged/ender_damage"
+		"function": "lgp:entities/player_modify/effects/damaged/ender_damage"
 	}
 }

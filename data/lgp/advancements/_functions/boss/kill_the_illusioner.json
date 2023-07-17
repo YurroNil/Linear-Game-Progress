@@ -6,7 +6,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:boss/is_illusioner"
+            "name": "lgp:entities/boss/is_illusioner"
           }
         ]
       },
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "lgp:boss/illusioner/bekilled"
+    "function": "lgp:entities/boss/illusioner/bekilled"
   }
 }

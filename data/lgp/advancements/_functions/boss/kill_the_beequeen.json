@@ -6,7 +6,7 @@
         "entity": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:boss/is_queenbee"
+            "name": "lgp:entities/boss/is_queenbee"
           }
         ]
       },
@@ -19,6 +19,6 @@
     ]
   ],
   "rewards": {
-    "function": "lgp:boss/bee_queen/bekilled"
+    "function": "lgp:entities/boss/bee_queen/bekilled"
   }
 }

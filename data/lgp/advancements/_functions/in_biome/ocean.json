@@ -20,7 +20,7 @@
           },
           {
             "condition": "minecraft:reference",
-            "name": "lgp:player/go_underwater"
+            "name": "lgp:entities/player/go_underwater"
           }
         ]
       },
@@ -32,6 +32,6 @@
     ["ocean"]
   ],
 	"rewards": {
-		"function": "lgp:player_modify/effects/damaged/drown_damage"
+		"function": "lgp:entities/player_modify/effects/damaged/drown_damage"
 	}
 }

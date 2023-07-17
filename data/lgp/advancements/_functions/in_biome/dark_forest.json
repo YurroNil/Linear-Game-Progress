@@ -29,6 +29,6 @@
     ]
   ],
 	"rewards": {
-		"function": "lgp:player_modify/effects/damaged/dark_damage"
+		"function": "lgp:entities/player_modify/effects/damaged/dark_damage"
 	}
 }

@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:entities/boss/illusioner/tick",
+    "lgp:entities/boss/bee_queen/tick",
+    "lgp:entities/boss/strange_witch/tick",
+    "lgp:entities/boss/slimeking/tick",
+    "lgp:entities/boss/elder_guardian/tick",
+    "lgp:entities/boss/phantom/tick",
+    "lgp:entities/boss/pillager_captain/tick",
+    "lgp:entities/boss/warden/tick",
+    "lgp:entities/boss/wither/tick",
+    "lgp:entities/boss/snow_golem/tick"
+
+  ]
+}
