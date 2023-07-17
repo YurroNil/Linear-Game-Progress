@@ -8,11 +8,10 @@
     execute as @e[tag=lgp.tp_lodestone.root] run function lgp:blocks/tp_lodestone/activate_judgment
 
 #移除
-    execute as @e[tag=lgp.tp_lodestone.root] at @s unless block ~ ~ ~ minecraft:lodestone run function lgp:blocks/tp_lodestone/uninstall
+    execute as @e[tag=lgp.tp_lodestone.root] at @s unless block ~ ~-1 ~ minecraft:lodestone run function lgp:blocks/tp_lodestone/uninstall
 
-#交互
-    execute as @e[tag=lgp.lodestone] at @s run function lgp:blocks/tp_lodestone/select_destination/tick
+    execute at @e[tag=lgp.tp_lodestone.root] run particle flame ~ ~ ~ 0.1 0.1 0.1 0 1 force @a
 
-#计时器
-    execute at @e[tag=lgp.lodestone] positioned ~-0.5 ~1 ~0.5 as @p[dx=0.5,dy=0.5,dz=0.5] at @s run function lgp:blocks/tp_lodestone/timer/tick
+#玩家是否站在磁石上
+    execute at @e[tag=lgp.tp_lodestone.root] positioned ~ ~ ~ as @p[distance=..0.5] at @s run function lgp:blocks/tp_lodestone/timer/tick
 

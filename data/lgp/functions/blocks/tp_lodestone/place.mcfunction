@@ -1,7 +1,8 @@
 
 #放置磁石
 setblock ~ ~ ~ minecraft:lodestone
-summon minecraft:text_display ~ ~1 ~ {Tags:["lgp.tp_lodestone.text"]}
+summon minecraft:interaction ~ ~1 ~ {Tags:["lgp.tp_lodestone.root"]}
+summon minecraft:text_display ~ ~1 ~ {Tags:["lgp.tp_lodestone.text","lgp.tp_lodestone.accessory"]}
 forceload add ~ ~
 
 #生成物品展示框
@@ -16,4 +17,4 @@ forceload add ~ ~
     
 
 #end
-tag @s remove lgp.tp_lodestone.rootInit
+kill @s
