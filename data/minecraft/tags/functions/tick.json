@@ -8,6 +8,7 @@
     "#lgp:advancement/tick",
     "#lgp:event/tick",
     "#lgp:items/tick",
+    "#lgp:blocks/tick",
     "#lgp:locations/tick"
  ]
 }
