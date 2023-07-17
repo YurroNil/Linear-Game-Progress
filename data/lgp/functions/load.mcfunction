@@ -22,23 +22,14 @@
         #mob_modifiy(怪物)
             scoreboard objectives add lgp.villagerData dummy
 
-<<<<<<< Updated upstream
-    #方块
-    scoreboard objectives add lgp.tp_lodestone.rightClick dummy
-    scoreboard objectives add lgp.tp_lodestone.leftClick dummy
-    scoreboard objectives add lgp.tp_lodestone.index dummy
-    scoreboard objectives add lgp.tp_lodestone.time dummy
-
     #玩家
     scoreboard objectives add player.air air
     scoreboard objectives add player.hunger food
     scoreboard objectives add player.badOmen dummy
-=======
             #怪物装备
             scoreboard objectives add lgp.equip.rec dummy
             scoreboard objectives add lgp.equip.slotIndex dummy
             scoreboard objectives add lgp.equip.aecDuration dummy
->>>>>>> Stashed changes
 
     #items(物品)
         #雷达
@@ -49,8 +40,11 @@
 
     #blocks(方块)
         scoreboard objectives add lgp.tp_lodestone dummy
-        scoreboard objectives add lgp.tp_lodestone.rightClick dummy
         scoreboard objectives add lgp.tp_lodestone.activatedSuccess dummy
+        scoreboard objectives add lgp.tp_lodestone.rightClick dummy
+        scoreboard objectives add lgp.tp_lodestone.leftClick dummy
+        scoreboard objectives add lgp.tp_lodestone.index dummy
+        scoreboard objectives add lgp.tp_lodestone.time dummy
 
     #locations(位置)
         scoreboard objectives add lgp.allow_entherTheNether dummy
