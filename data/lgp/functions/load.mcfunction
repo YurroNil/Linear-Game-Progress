@@ -4,6 +4,7 @@
     scoreboard objectives add lgp.worldProcess dummy
 
     #计算
+    function lgp:scoreboard_constants
     scoreboard objectives add lgp.PosX dummy
     scoreboard objectives add lgp.PosY dummy
     scoreboard objectives add lgp.PosZ dummy

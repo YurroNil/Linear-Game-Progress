@@ -2,7 +2,7 @@ tellraw @s {"text":"","extra":[{"text":"\n\n"},{"text":"以下是分别是雷达
 scoreboard players set #noResults lgp.radar.rightClick 1
 
 #村庄
-execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:in_structure/village,distance=..500] at @s run function lgp:items/radar/get_info/structures/village
+execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:in_structure/villages,distance=..500] at @s run function lgp:items/radar/get_info/structures/village
 
 #丛林神庙
 execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:in_structure/jungle_pyramid,distance=..500] at @s run function lgp:items/radar/get_info/structures/jungle_pyramid
