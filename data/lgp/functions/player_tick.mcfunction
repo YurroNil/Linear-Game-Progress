@@ -1,0 +1,1 @@
+function lgp:blocks/tp_lodestone/obj/player

@@ -5,4 +5,4 @@ summon item ~ ~ ~ {CustomName:'{"text":"紫水晶块"}',CustomNameVisible:1b,Mot
 playsound minecraft:block.beacon.deactivate voice @a ~ ~ ~ 10 0 0
 #forceload remove ~ ~
 scoreboard players remove #lgp.tp_lodestone.current_place_index lgp.int 1
-kill @s
+tag @s add lgp.kill

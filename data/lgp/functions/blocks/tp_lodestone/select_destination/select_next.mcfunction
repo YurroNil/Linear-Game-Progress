@@ -6,5 +6,4 @@
 #按照索引搜素目的地列表，然后设置对应的文字
     function lgp:blocks/tp_lodestone/select_destination/set
 
-say rightClick
 scoreboard players reset @s lgp.tp_lodestone.rightClick
