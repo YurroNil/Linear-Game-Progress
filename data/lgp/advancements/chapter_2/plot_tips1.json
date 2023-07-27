@@ -7,7 +7,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "当前主线任务:去湿地生物群系击杀蜂后、诡异的女巫和史莱姆王获取材料制作海龟帽.",
+    "description": "当前主线任务:去丛林找到熊猫并投喂宝宝奶昔，然后击蜂后.",
     "frame": "task",
     "hidden": true,
     "icon": {

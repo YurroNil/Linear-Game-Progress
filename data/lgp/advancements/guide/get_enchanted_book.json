@@ -17,7 +17,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "在大师等级的工具匠村民交易一本精准采集附魔书",
+    "description": {"text":"","extra":[{"text":"在大师等级的工具匠村民交易一本精准采集附魔书\n\n"},{"text":"进度完成奖励：铁块*2","color":"yellow"}]},
     "frame": "goal",
     "hidden": false,
     "icon": {
@@ -28,5 +28,8 @@
   },
   "requirements": [
     ["enchanted_book"]
-  ]
+  ],
+  "rewards": {
+    "function": "lgp:advancement/guide/get_enchantedbook_rewards"
+  }
 }

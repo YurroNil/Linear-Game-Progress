@@ -22,4 +22,4 @@ execute if score guide.1 lgp.plot matches 800 as @a at @s run playsound minecraf
 
 execute if score guide.1 lgp.plot matches 900.. run advancement grant @a only lgp:guide/plot_tips1
 
-execute if score guide.1 lgp.plot matches 900.. run scoreboard players reset guide.1.loop lgp.plot
+execute if score guide.1 lgp.plot matches 900.. run function lgp:plot/guide/reset

@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:chapter_2/kill_queenbee",
+  "criteria": {
+    "impossible": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "当前主线任务:去沼泽生物群系击杀诡异的女巫和史莱姆王获取材料合成神秘物品.",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "show_toast": true,
+    "title": "已更新当前主线任务"
+  }
+}

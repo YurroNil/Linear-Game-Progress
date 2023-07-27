@@ -11,4 +11,4 @@ execute if score chapter1.2 lgp.plot matches 200 as @a at @s run playsound minec
 execute if score chapter1.2 lgp.plot matches 300 run tellraw @a {"text":"","extra":[{"text":"<村民D> "},{"text":"大家快躲起来！勇者，交给你了！"}]}
 execute if score chapter1.2 lgp.plot matches 300 as @a at @s run playsound minecraft:entity.villager.ambient voice @s ~ ~ ~ 100 1 1
 
-execute if score chapter1.2 lgp.plot matches 300.. run scoreboard players reset chapter1.2.loop lgp.plot
+execute if score chapter1.2 lgp.plot matches 300.. run function lgp:plot/chapter_1/reset

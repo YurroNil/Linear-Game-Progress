@@ -15,5 +15,8 @@
     },
     "show_toast": true,
     "title": "真的不太妙"
+  },
+  "rewards": {
+    "function": "lgp:plot/chapter_1/trigger_2"
   }
 }

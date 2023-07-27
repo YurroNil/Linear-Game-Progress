@@ -1,5 +1,5 @@
 {
-  "parent": "lgp:chapter_2/kill_queenbee",
+  "parent": "lgp:chapter_2/plot_tips2",
   "criteria": {
     "enter_the_swamp": {
       "conditions": {

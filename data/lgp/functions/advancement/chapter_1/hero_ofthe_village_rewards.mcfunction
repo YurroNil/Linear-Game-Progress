@@ -4,3 +4,5 @@ give @s minecraft:enchanted_book{display:{Lore:['{"text":" "}','{"text":"进度�
 
 give @s minecraft:enchanted_golden_apple{display:{Lore:['{"text":" "}','{"text":"进度奖励","color":"#00FF7F","italic":false}']}} 3
 give @s minecraft:golden_apple{display:{Lore:['{"text":" "}','{"text":"进度奖励","color":"#00FF7F","italic":false}']}} 10
+
+scoreboard players set chapter1.3.loop lgp.plot 1

@@ -5,7 +5,7 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:any_ofs",
+          "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
@@ -27,7 +27,7 @@
               "name": "minecraft:gravel"
             },
             {
-              "type": "minecraft:any_ofs",
+              "type": "minecraft:alternatives",
               "children": [
                 {
                   "type": "minecraft:item",
@@ -61,5 +61,6 @@
       ],
       "rolls": 1.0
     }
-  ]
+  ],
+  "random_sequence": "minecraft:blocks/gravel"
 }

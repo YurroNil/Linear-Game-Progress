@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:gold_block"
   },
@@ -8,5 +8,8 @@
   },
   "result": {
     "item": "minecraft:golden_shovel"
+  },
+  "template": {
+    "item": "minecraft:iron_ingot"
   }
 }

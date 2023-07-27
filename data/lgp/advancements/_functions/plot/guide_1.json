@@ -1,0 +1,24 @@
+{
+  "parent": "lgp:_functions/root",
+  "criteria": {
+    "in_the_villages": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:in_structure/villages"
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_the_villages"
+    ]
+  ],
+	"rewards": {
+		"function": "lgp:plot/guide/trigger"
+	}
+}

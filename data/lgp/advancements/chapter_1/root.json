@@ -15,5 +15,8 @@
     },
     "show_toast": true,
     "title": "第一章(村庄篇)"
+  },
+  "rewards": {
+    "function": "lgp:plot/chapter_1/trigger_1"
   }
 }

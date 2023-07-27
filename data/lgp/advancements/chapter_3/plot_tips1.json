@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:chapter_3/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "当前主线任务:制作海龟帽去海底废墟找到藏宝图，发现宝藏并利用其资源制作潮涌核心。最后大战海底神殿！",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "show_toast": true,
+    "title": "已更新当前主线任务"
+  }
+}
