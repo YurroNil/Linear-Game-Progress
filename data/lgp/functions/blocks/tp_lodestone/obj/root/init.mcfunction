@@ -7,9 +7,9 @@ scoreboard players set @s lgp.tp_lodestone.activatedSuccess 0
 
 scoreboard players operation @s lgp.tp_lodestone.index = #lgp.tp_lodestone.current_place_index lgp.int
 
-#添加当前坐标到destination_list列表首元素
-    data modify storage lgp:blocks/tp_lodestone destination_list[0].pos set from entity @s Pos
-#列表头部新插入元素
-    data modify storage lgp:blocks/tp_lodestone destination_list prepend value {pos:[], text:''}
+#添加当前坐标到destination_list列表
+    function lgp:blocks/tp_lodestone/obj/root/set_list_pos
 
-say 1
+
+    
+

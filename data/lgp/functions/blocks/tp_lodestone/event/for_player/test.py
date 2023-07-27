@@ -1,2 +1,0 @@
-for i in range(0, 16):
-    print("execute if score @s lgp.tp_lodestone.index matches {0} run data modify entity @e[tag=lgp.tp_lodestone.bearer,sort=nearest,limit=1,distance=..0.1] Pos set from storage lgp:blocks/tp_lodestone destination_list[{0}]".format(i))

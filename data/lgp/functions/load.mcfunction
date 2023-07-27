@@ -54,11 +54,11 @@
 
 #游戏规则
     gamerule commandBlockOutput false
-    gamerule universalAnger false
-    gamerule reducedDebugInfo false
-    difficulty hard
+    #gamerule universalAnger false
+    #gamerule reducedDebugInfo true
+    #difficulty hard
     #如果加载forge的话，需要禁用forge的数据包，不然原版数据包会被forge数据包覆盖，然后LGP数据包就无法更改原版数据包的东西了，例如更改MC原版配方、战利品表、结构等等。
     datapack disable "mod:forge"
 
 #数据存储
-    data merge storage lgp:blocks/tp_lodestone {destination_list:[{pos:[], text:''}]}
+    function lgp:blocks/tp_lodestone/load

@@ -7,12 +7,12 @@
     execute if entity @e[tag=lgp.tp_lodestone.accessory,distance=..1] run function lgp:blocks/tp_lodestone/obj/init/next_tp_lodestone
 
 #若下标已经超过最大值，放置失效
-    execute if score #lgp.tp_lodestone.current_place_index lgp.int >= #lgp.tp_lodestone.max_count lgp.int run function lgp:blocks/tp_lodestone/obj/init/out_of_count
+    execute if score #lgp.tp_lodestone.current_place_index lgp.int >= #lgp.tp_lodestone.max_count lgp.int unless entity @s[tag=lgp.kill] run function lgp:blocks/tp_lodestone/obj/init/out_of_count
 
 #若下标在允许范围内，允许放置
-    execute if score #lgp.tp_lodestone.current_place_index lgp.int < #lgp.tp_lodestone.max_count lgp.int run function lgp:blocks/tp_lodestone/obj/init
+    execute if score #lgp.tp_lodestone.current_place_index lgp.int < #lgp.tp_lodestone.max_count lgp.int unless entity @s[tag=lgp.kill] run function lgp:blocks/tp_lodestone/obj/init
 
-
+    
 
 
     
