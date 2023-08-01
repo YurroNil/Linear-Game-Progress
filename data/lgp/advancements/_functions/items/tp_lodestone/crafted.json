@@ -1,0 +1,13 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:recipe_crafted",
+        "conditions": {
+          "recipe_id": "lgp:crafted/tp_lodestone"
+        }
+      }
+    },
+    "rewards": {
+      "function": "lgp:items/tp_lodestone/crafted"
+    }
+  }
