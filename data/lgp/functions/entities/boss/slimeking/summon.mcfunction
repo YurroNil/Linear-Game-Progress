@@ -1,5 +1,5 @@
 execute unless entity @e[tag=lgp.slimeKing.type] summon minecraft:slime run function lgp:entities/boss/slimeking/model
-summon marker ~ ~ ~ {Tags:["lgp.slimeKing.tickTimer"]}
+#summon marker ~ ~ ~ {Tags:["lgp.slimeKing.tickTimer"]}
 
 particle minecraft:explosion ~ ~ ~ 5 5 5 1 1000 force @a
 playsound minecraft:block.end_gateway.spawn voice @a ~ ~ ~ 1000 0 1

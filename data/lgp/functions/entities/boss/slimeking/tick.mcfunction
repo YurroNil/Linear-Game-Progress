@@ -1,3 +1,6 @@
+#declare score_holder #slimeking.construct
+#declare score_holder #slimeking.destruct
+
 #BOSS生成
     execute if entity @a[scores={lgp.worldProcess=6..}] if score slimeKing.allowSummon lgp.world matches 1 as @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:in_biome/mangrove_swamp] at @s unless entity @e[type=slime,tag=lgp.slimeKing,predicate=lgp:in_biome/mangrove_swamp,distance=..300] run tag @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:in_biome/mangrove_swamp,limit=1] add lgp.slimeKing.summonMarker
     #生成史莱姆王
@@ -20,7 +23,6 @@
     bossbar set slime_king max 100
     execute at @a as @e[sort=nearest,limit=1,tag=lgp.slimeKing] store result bossbar slime_king value run data get entity @s Health 1.0
 
-
 #史莱姆王分身
     #添加标签
     execute as @e[type=minecraft:slime,tag=!lgp.slimeKing.clone,tag=!lgp.slimeKing,nbt={CustomName:'{"bold":true,"color":"green","text":"史莱姆王"}'}] run data merge entity @s {CustomName:'{"bold":true,"color":"green","text":"史莱姆王"}',Tags:["lgp.slimeKing.clone","lgp.BOSS","lgp.slimeKing.type"],Glowing:1b}
@@ -29,11 +31,15 @@
     execute as @e[tag=player.group,tag=!player.operTags] at @s if entity @e[tag=lgp.slimeKing.clone,nbt={Size:0},distance=..1.5] run damage @s 2.0 minecraft:generic by @e[tag=lgp.slimeKing.clone,nbt={Size:0},limit=1,sort=nearest]
 
     #检测是否算完全死亡
-    execute if entity @e[tag=lgp.slimeKing.tickTimer] run scoreboard objectives add lgp.slimeKing dummy
-    execute if score deathDetector lgp.slimeKing matches 1 unless entity @e[tag=lgp.slimeKing.type] run scoreboard players add @e[tag=lgp.slimeKing.tickTimer] lgp.slimeKing 1
-    execute if entity @e[tag=lgp.slimeKing.type] run scoreboard players reset @e[tag=lgp.slimeKing.tickTimer] lgp.slimeKing
+    #如果完全死亡
+    execute if score #slimeking.destruct lgp.slimeKing matches 1 run function lgp:entities/boss/slimeking/destructor
+    #execute if entity @e[tag=lgp.slimeKing.tickTimer] run scoreboard objectives add lgp.slimeKing dummy
+    #必须要没有一个史莱姆才会执行这条命令
+    #execute if score deathDetector lgp.slimeKing matches 1 unless entity @e[tag=lgp.slimeKing.type] run scoreboard players add @e[tag=lgp.slimeKing.tickTimer] lgp.slimeKing 1
+    #只要有一个史莱姆存在就会重置检测实体的分数
+    #execute if entity @e[tag=lgp.slimeKing.type] run scoreboard players reset @e[tag=lgp.slimeKing.tickTimer] lgp.slimeKing
 
-    execute as @e[tag=lgp.slimeKing.tickTimer,scores={lgp.slimeKing=80..}] run function lgp:entities/boss/slimeking/bekilled
+    #execute as @e[tag=lgp.slimeKing.tickTimer,scores={lgp.slimeKing=80..}] run function lgp:entities/boss/slimeking/bekilled
 
 
 #史莱姆王分身bossbar
