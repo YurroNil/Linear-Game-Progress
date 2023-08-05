@@ -1,3 +1,9 @@
+#declare score_holder #elderGuardian.destruct
+#declare score_holder #elderGuardian.type1.totalCount
+#declare score_holder #elderGuardian.type2.totalCount
+#declare score_holder #elderGuardian.type3.totalCount
+#declare score_holder #elderGuardian.totalDeathCount
+
 #远古守卫者BOSS生成
     #添加tag
     #设置
@@ -7,8 +13,10 @@
     function lgp:entities/boss/elder_guardian/set_bossbar
 
 #死亡检测
-    execute store result score elderGuardian.Count lgp.elderGuardian if entity @e[tag=lgp.elderGuardian]
-    execute if score deathDetector lgp.elderGuardian matches 1 if score elderGuardian.Count lgp.elderGuardian matches 0 as @e[tag=lgp.elderGuardian.tickTimer] at @s unless entity @e[tag=lgp.elderGuardian] run function lgp:entities/boss/elder_guardian/bekilled
+    execute if score #elderGuardian.destruct lgp.elderGuardian matches 1 run function lgp:entities/boss/elder_guardian/destructor
+
+    #execute store result score elderGuardian.Count lgp.elderGuardian if entity @e[tag=lgp.elderGuardian]
+    #execute if score deathDetector lgp.elderGuardian matches 1 if score elderGuardian.Count lgp.elderGuardian matches 0 as @e[tag=lgp.elderGuardian.tickTimer] at @s unless entity @e[tag=lgp.elderGuardian] run function lgp:entities/boss/elder_guardian/bekilled
 
 #技能
     #头指令

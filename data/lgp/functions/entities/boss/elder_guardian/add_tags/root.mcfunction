@@ -4,11 +4,12 @@
     #计分板
     scoreboard objectives add lgp.elderGuardian dummy
     scoreboard players set deathDetector lgp.elderGuardian 1
+    scoreboard players set #elder_guardian.totalCount lgp.elderGuardian 3
 # 添加标签
     function lgp:entities/boss/elder_guardian/add_tags/1
 
 #生成检测实体
-    summon marker ~ ~ ~ {Tags:["lgp.elderGuardian.tickTimer"]}
+    #summon marker ~ ~ ~ {Tags:["lgp.elderGuardian.tickTimer"]}
 
 #完成
     tag @s add lgp.elderGuardian_Inited

@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "player_killed_one_elder_guardian_type1": {
+            "trigger": "minecraft:player_killed_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:reference",
+                        "name": "lgp:entities/boss/is_elder_guardian_type1"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "lgp:entities/boss/elder_guardian/obj_external/player/kill/type1"
+    }
+}
