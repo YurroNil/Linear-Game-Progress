@@ -31,8 +31,8 @@
     execute as @e[tag=player.group,tag=!player.operTags] at @s if entity @e[tag=lgp.slimeKing.clone,nbt={Size:0},distance=..1.5] run damage @s 2.0 minecraft:generic by @e[tag=lgp.slimeKing.clone,nbt={Size:0},limit=1,sort=nearest]
 
     #检测是否算完全死亡
-    #如果完全死亡
-    execute if score #slimeking.destruct lgp.slimeKing matches 1 run function lgp:entities/boss/slimeking/destructor
+    #如果世界上有多个史莱姆王存在，以下命令会造成一些bug 
+    execute if score #slimeking.destruct lgp.slimeKing matches 1 as @e[tag=lgp.slimeKing.type] run function lgp:entities/boss/slimeking/destructor
     #execute if entity @e[tag=lgp.slimeKing.tickTimer] run scoreboard objectives add lgp.slimeKing dummy
     #必须要没有一个史莱姆才会执行这条命令
     #execute if score deathDetector lgp.slimeKing matches 1 unless entity @e[tag=lgp.slimeKing.type] run scoreboard players add @e[tag=lgp.slimeKing.tickTimer] lgp.slimeKing 1
