@@ -1,3 +1,3 @@
 clear @s knowledge_book 1
-function lgp:blocks/tp_lodestone/item/give
+loot give @s loot lgp:item/tp_lodestone
 recipe take @s lgp:crafted/tp_lodestone

@@ -1,3 +1,2 @@
 summon silverfish ~ ~ ~
-tp @s ~ -255 ~
-kill @s
+tag @s add lgp.kill

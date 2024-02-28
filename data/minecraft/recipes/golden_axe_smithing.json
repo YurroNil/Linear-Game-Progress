@@ -8,5 +8,8 @@
   },
   "result": {
     "item": "minecraft:golden_axe"
+  },
+  "template": {
+    "tag": "lgp:hard_metal_ingots"
   }
 }

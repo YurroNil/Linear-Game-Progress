@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide_part1/get_iron_nugget",
+  "criteria": {
+    "gold_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:gold_nugget"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:gold_nugget"
+    },
+    "show_toast": true,
+    "title": "获得金粒"
+  },
+  "requirements": [
+    [
+      "gold_nugget"
+    ]
+  ]
+}

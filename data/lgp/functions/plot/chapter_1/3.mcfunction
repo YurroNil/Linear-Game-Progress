@@ -11,5 +11,4 @@ execute if score chapter1.3 lgp.plot matches 200 as @a at @s run playsound minec
 execute if score chapter1.3 lgp.plot matches 400 run tellraw @a {"text":"","extra":[{"text":"<制图师村民> "},{"text":"我可能需要更多的旗帜来验证我的想法，可以帮我收集更多的旗帜吗？"}]}
 execute if score chapter1.3 lgp.plot matches 400 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score chapter1.3 lgp.plot matches 400.. run advancement grant @a only lgp:chapter_1/plot_tips2
-execute if score chapter1.3 lgp.plot matches 400.. run function lgp:plot/chapter_1/reset
+execute if score chapter1.3 lgp.plot matches 400.. run scoreboard players reset chapter1.3.loop lgp.plot

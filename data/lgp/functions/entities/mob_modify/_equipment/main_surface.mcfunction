@@ -1,6 +1,6 @@
 
 #盔甲
-    loot replace entity @s armor.head loot lgp:equipment/helmets
+    loot replace entity @s[predicate=!lgp:is_pillager_captain] armor.head loot lgp:equipment/helmets
     loot replace entity @s armor.chest loot lgp:equipment/chestplates
     loot replace entity @s armor.legs loot lgp:equipment/leggings
     loot replace entity @s armor.feet loot lgp:equipment/boots

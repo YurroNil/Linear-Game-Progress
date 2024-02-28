@@ -15,8 +15,5 @@
     },
     "show_toast": false,
     "title": "第二章(湿地篇)"
-  },
-  "rewards": {
-    "function": "lgp:plot/chapter_2/trigger_1"
   }
 }

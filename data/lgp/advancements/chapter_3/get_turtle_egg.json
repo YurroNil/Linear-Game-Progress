@@ -1,5 +1,5 @@
 {
-  "parent": "lgp:chapter_3/plot_tips1",
+  "parent": "lgp:chapter_3/root",
   "criteria": {
     "get_turtle_egg": {
       "conditions": {

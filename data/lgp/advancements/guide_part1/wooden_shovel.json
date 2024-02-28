@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide_part1/get_crafting_table",
+  "criteria": {
+    "wooden_shovel": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wooden_shovel"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用皮革、木板和木棍在工作台合成一把木锹.用新做的锹去挖掘砂砾获取金属粒吧!",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:wooden_shovel"
+    },
+    "show_toast": true,
+    "title": "土类方块居然也要对应工具？"
+  },
+  "requirements": [
+    [
+      "wooden_shovel"
+    ]
+  ]
+}

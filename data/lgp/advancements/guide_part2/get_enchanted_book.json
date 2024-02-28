@@ -1,0 +1,32 @@
+{
+  "parent": "lgp:guide_part2/get_iron_block",
+  "criteria": {
+    "enchanted_book": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:enchanted_book"
+            ],
+            "nbt": "{StoredEnchantments:[{id:\"minecraft:silk_touch\",lvl:1s}]}"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "在大师等级的工具匠村民交易一本精准采集附魔书",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:enchanted_book"
+    },
+    "show_toast": true,
+    "title": "第一本附魔书...？"
+  },
+  "requirements": [
+    ["enchanted_book"]
+  ]
+}

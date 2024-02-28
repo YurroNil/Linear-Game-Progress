@@ -5,7 +5,7 @@
       "bonus_rolls": 0.0,
       "entries": [
         {
-          "type": "minecraft:alternatives",
+          "type": "minecraft:any_of",
           "children": [
             {
               "type": "minecraft:item",
@@ -45,6 +45,5 @@
       ],
       "rolls": 1.0
     }
-  ],
-  "random_sequence": "minecraft:blocks/deepslate_gold_ore"
+  ]
 }

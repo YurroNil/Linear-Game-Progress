@@ -5,7 +5,7 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:any_ofs",
+          "type": "minecraft:alternatives",
           "children": [
             {
               "type": "minecraft:item",
@@ -27,7 +27,7 @@
               "name": "minecraft:gravel"
             },
             {
-              "type": "minecraft:any_ofs",
+              "type": "minecraft:alternatives",
               "conditions": [
                 {
                   "condition": "minecraft:survives_explosion"
@@ -64,7 +64,7 @@
                     {
                       "condition": "minecraft:table_bonus",
                       "enchantment": "minecraft:fortune",
-                      "chances": [0.06, 0.1014285715, 0.0525]
+                      "chances": [0.16, 0.1014285715, 0.1525]
                     }
                   ],
                   "name": "minecraft:gold_nugget"
@@ -81,7 +81,7 @@
                     {
                       "condition": "minecraft:table_bonus",
                       "enchantment": "minecraft:fortune",
-                      "chances": [0.02, 0.0914285715, 0.0125]
+                      "chances": [0.15, 0.0914285715, 0.0525]
                     }
                   ],
                   "name": "minecraft:iron_nugget"

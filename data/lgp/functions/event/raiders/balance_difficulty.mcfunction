@@ -1,5 +1,5 @@
-effect give @s resistance 10 1 true
-effect give @s strength 10 1 true
+effect give @e[type=#minecraft:raiders] minecraft:glowing infinite 0 true
+effect give @e[type=#minecraft:raiders] minecraft:weakness infinite 0 true
 
 #设置袭击怪物
     #唤魔者

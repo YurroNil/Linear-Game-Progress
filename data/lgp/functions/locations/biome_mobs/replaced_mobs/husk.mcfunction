@@ -1,3 +1,2 @@
 summon husk ~ ~ ~
-tp @s ~ -255 ~
-kill @s
+tag @s add lgp.kill

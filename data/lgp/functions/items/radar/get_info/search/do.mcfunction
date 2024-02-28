@@ -1,4 +1,2 @@
-execute unless score @s lgp.radar.rightClick matches -2147483648..2147483647 run function lgp:items/radar/get_info/search/0
-scoreboard players operation getInfo.tempScore lgp.radar.rightClick = @s lgp.radar.rightClick
-scoreboard players reset @s lgp.radar.rightClick
-effect give @s glowing 5 0 true
+scoreboard players add @s lgp.radar.getInfo.rec 1
+execute store result storage lgp:items/radar getInfo_search[0].distance_var int 1 run scoreboard players get @s lgp.radar.getInfo.rec

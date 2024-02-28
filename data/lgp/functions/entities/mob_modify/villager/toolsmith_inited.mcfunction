@@ -27,4 +27,4 @@
     data modify entity @s Offers.Recipes[8].sell.id set value "minecraft:enchanted_book"
     data modify entity @s Offers.Recipes[8].sell.tag set value {StoredEnchantments:[{id:"minecraft:silk_touch",lvl:1s}]}
 
-scoreboard players operation @s lgp.villagerData = @s player.air
+scoreboard players operation @s lgp.villagerData = @s lgp.villagerLevel

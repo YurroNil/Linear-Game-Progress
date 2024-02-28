@@ -10,6 +10,6 @@
     "item": "minecraft:iron_hoe"
   },
   "template": {
-    "item": "minecraft:copper_ingot"
+    "tag": "lgp:hard_metal_ingots"
   }
 }

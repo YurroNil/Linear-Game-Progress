@@ -7,8 +7,8 @@
     data modify entity @s Offers.Recipes[3].buyB.id set value "minecraft:prismarine_shard"
 
     #设置灾厄旗帜
-    data modify entity @s Offers.Recipes[5].buyB.id set value "minecraft:white_banner"
-    data modify entity @s Offers.Recipes[5].buyB.Count set value 7
-    data modify entity @s Offers.Recipes[5].buyB.tag set value {BlockEntityTag:{Patterns:[{Color:9,Pattern:"mr"},{Color:8,Pattern:"bs"},{Color:7,Pattern:"cs"},{Color:8,Pattern:"bo"},{Color:15,Pattern:"ms"},{Color:8,Pattern:"hh"},{Color:8,Pattern:"mc"},{Color:15,Pattern:"bo"}],id:"minecraft:banner"},HideFlags:32,display:{Name:'{"color":"gold","translate":"block.minecraft.ominous_banner"}'}}
+    data modify entity @s Offers.Recipes[4].buyB.id set value "minecraft:white_banner"
+    data modify entity @s Offers.Recipes[4].buyB.Count set value 7
+    data modify entity @s Offers.Recipes[4].buyB.tag set value {HideFlags:32,BlockEntityTag:{Patterns:[{Pattern:"mr",Color:9},{Pattern:"bs",Color:8},{Pattern:"cs",Color:7},{Pattern:"bo",Color:8},{Pattern:"ms",Color:15},{Pattern:"hh",Color:8},{Pattern:"mc",Color:8},{Pattern:"bo",Color:15}],id:"minecraft:banner"},display:{Name:'{"translate":"block.minecraft.ominous_banner","color":"gold"}'}}
 
-scoreboard players operation @s lgp.villagerData = @s player.air
+scoreboard players operation @s lgp.villagerData = @s lgp.villagerLevel

@@ -10,6 +10,6 @@
     "item": "minecraft:diamond_sword"
   },
   "template": {
-    "item": "minecraft:iron_ingot"
+    "tag": "lgp:hard_metal_ingots"
   }
 }

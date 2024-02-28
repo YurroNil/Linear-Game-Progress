@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:guide_part2/root",
+  "criteria": {
+    "impossible": {
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "当前主线任务:进入铁器时代(获得铁全套和铁器).",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:nether_star"
+    },
+    "show_toast": true,
+    "title": "已更新当前主线任务"
+  }
+}

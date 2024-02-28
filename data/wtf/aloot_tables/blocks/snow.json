@@ -12,10 +12,10 @@
       ],
       "entries": [
         {
-          "type": "minecraft:alternatives",
+          "type": "minecraft:any_of",
           "children": [
             {
-              "type": "minecraft:alternatives",
+              "type": "minecraft:any_of",
               "children": [
                 {
                   "type": "minecraft:item",
@@ -198,7 +198,7 @@
               ]
             },
             {
-              "type": "minecraft:alternatives",
+              "type": "minecraft:any_of",
               "children": [
                 {
                   "type": "minecraft:item",
@@ -351,6 +351,5 @@
       ],
       "rolls": 1.0
     }
-  ],
-  "random_sequence": "minecraft:blocks/snow"
+  ]
 }

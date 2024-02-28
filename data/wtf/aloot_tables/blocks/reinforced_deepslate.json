@@ -1,4 +1,3 @@
 {
-  "type": "minecraft:block",
-  "random_sequence": "minecraft:blocks/reinforced_deepslate"
+  "type": "minecraft:block"
 }

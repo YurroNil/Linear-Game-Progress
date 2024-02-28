@@ -11,4 +11,4 @@
     data modify entity @s Offers.Recipes[8].sell.id set value "minecraft:chainmail_helmet"
     data modify entity @s Offers.Recipes[9].sell.id set value "minecraft:chainmail_chestplate"
 
-scoreboard players operation @s lgp.villagerData = @s player.air
+scoreboard players operation @s lgp.villagerData = @s lgp.villagerLevel

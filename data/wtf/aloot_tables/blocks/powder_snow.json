@@ -1,4 +1,3 @@
 {
-  "type": "minecraft:block",
-  "random_sequence": "minecraft:blocks/powder_snow"
+  "type": "minecraft:block"
 }

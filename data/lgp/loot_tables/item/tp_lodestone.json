@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:empty",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:warden_spawn_egg"
+          }
+        ]
+      }
+    ],
+    "functions": [
+      {
+        "function": "minecraft:set_nbt",
+        "tag": "{lgpTags:\"tp_lodestone\",display:{Name:'{\"text\":\"传送磁石\",\"italic\":false,\"color\":\"#9400D3\",\"bold\":true}',Lore:['{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[激活方法]  \",\"color\":\"#9370DB\",\"bold\":true},{\"text\":\"用四个紫水晶碎片塞进传送磁石方块的4个面即可完成激活，\",\"color\":\"white\"}]}','{\"text\":\"               激活后可使用一次，若想再次使用需要重新激活.\",\"color\":\"white\",\"italic\":false}','{\"text\":\"\"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[使用方法]  \",\"color\":\"#C71585\",\"bold\":true},{\"text\":\"站在传送磁石上等待五秒即可完成一次传送，同时也可以通过\",\"color\":\"white\"}]}','{\"text\":\"               左键/右键显示文本更改传送目的地.传送磁石可以被命名牌\",\"color\":\"white\",\"italic\":false}','{\"text\":\"               改名，挖除传送磁石即可移除.\",\"color\":\"white\",\"italic\":false}']},HideFlags:63,EntityTag:{id:\"minecraft:marker\",Tags:[\"lgp.tp_lodestone.init\"]}}"
+      }
+    ]
+  }
+  

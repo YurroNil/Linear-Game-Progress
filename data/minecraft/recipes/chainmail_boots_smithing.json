@@ -10,6 +10,6 @@
     "item": "minecraft:chainmail_boots"
   },
   "template": {
-    "item": "minecraft:brick"
+    "tag": "lgp:hard_metal_ingots"
   }
 }

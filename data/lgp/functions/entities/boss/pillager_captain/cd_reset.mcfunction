@@ -1,3 +1,3 @@
-scoreboard players reset slimeKing.inCD lgp.world
-scoreboard players reset #slimeKing.inCD.dayPeriod lgp.world
-scoreboard players set slimeKing.allowSummon lgp.world 1
+scoreboard players reset #pillagerCaptain.inCD.dayPeriod lgp.world
+scoreboard players reset pillagerCaptain.inCD lgp.world
+scoreboard players set pillagerCaptain.allowSummon lgp.world 1
