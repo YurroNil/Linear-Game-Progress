@@ -53,7 +53,7 @@
     #gamerule universalAnger false
     #gamerule reducedDebugInfo true
     #difficulty hard
-    
+ 
     #如果加载forge则需要禁用ForgeAPI的数据包，否则原版数据包会被forge数据包覆盖，LGP数据包无法更改原版数据包的战利品表、配方、结构...等等。
     datapack disable "mod:forge"
 
