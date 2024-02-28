@@ -16,6 +16,6 @@ execute if score guide.2 lgp.plot matches 800 as @p run function lgp:advancement
 execute if score guide.2 lgp.plot matches 800 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
 
-execute if score guide.2 lgp.plot matches 900.. run advancement grant @a only lgp:guide_part2/plot_tips2
+execute if score guide.2 lgp.plot matches 900.. run advancement grant @a only lgp:advancement/guide_part2/plot_tips2
 
 execute if score guide.2 lgp.plot matches 900.. run scoreboard players reset guide.2.loop lgp.plot

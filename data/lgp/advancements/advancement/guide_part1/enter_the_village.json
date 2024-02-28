@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:advancement/guide_part1/root",
+  "criteria": {
+    "in_the_villages": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_structure/villages"
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"进入村庄寻求村民的帮助\n\n"},{"text":"进度完成奖励：指南针*1,磁石*1","color":"yellow"}]},
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:oak_door"
+    },
+    "show_toast": true,
+    "title": "开始新的冒险旅程"
+  },
+  "requirements": [
+    ["in_the_villages"]
+  ],
+  "rewards": {
+    "function": "lgp:advancement/guide_part1/enter_the_village_rewards"
+  }
+}

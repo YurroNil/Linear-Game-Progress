@@ -1,6 +1,6 @@
 #是否在丛林遗迹
-    execute as @e[tag=lgp.beeQueen.marker] at @s if predicate lgp:in_biome/jungle run function lgp:entities/boss/bee_queen/model
-    execute as @e[tag=lgp.beeQueen.marker] at @s unless predicate lgp:in_biome/jungle run function lgp:entities/boss/bee_queen/summon_fail
+    execute as @e[tag=lgp.beeQueen.marker] at @s if predicate lgp:locations/in_biome/jungle run function lgp:entities/boss/bee_queen/model
+    execute as @e[tag=lgp.beeQueen.marker] at @s unless predicate lgp:locations/in_biome/jungle run function lgp:entities/boss/bee_queen/summon_fail
 
     kill @e[tag=lgp.beeQueen.marker]
 

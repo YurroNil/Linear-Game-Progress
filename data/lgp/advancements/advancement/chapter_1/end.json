@@ -1,0 +1,19 @@
+{
+  "parent": "lgp:advancement/chapter_1/kill_the_illusioner",
+  "criteria": {
+    "impossible":{
+      "trigger": "impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "description": "",
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:grass_block"
+    },
+    "show_toast": false,
+    "title": "第一章结束"
+  }
+}

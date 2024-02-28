@@ -1,0 +1,22 @@
+{
+  "parent": "lgp:advancement/chapter_1/hero_of_the_village",
+  "criteria": {
+    "impossible":{"trigger": "impossible"}
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"在制图师购买一张林地府邸的探险家地图\n\n"},{"text":"进度完成奖励：指南针*1,磁石*1","color":"yellow"}]},
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:filled_map",
+      "nbt": "{display:{MapColor:5393476}}"
+    },
+    "show_toast": true,
+    "title": "轮到我们了！"
+  },
+  "rewards": {
+    "function": "lgp:advancement/chapter_1/get_mansionmap_rewards"
+  }
+
+}

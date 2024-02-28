@@ -1,0 +1,34 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "in_the_mansion": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_structure/mansion"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 4}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    [
+      "in_the_mansion"
+    ]
+  ],
+	"rewards": {
+		"function": "lgp:entities/player_modify/effects/damaged/dark_damage"
+	}
+}

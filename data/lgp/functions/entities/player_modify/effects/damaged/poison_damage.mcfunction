@@ -4,5 +4,5 @@ effect give @s[tag=!player.operTags] minecraft:nausea 12 0 true
 title @s[tag=!player.operTags] title ""
 title @s[tag=!player.operTags] subtitle {"text":"你受到了剧毒诅咒.因为世界进度未满足要求","color":"dark_green"}
 
-advancement revoke @s only lgp:_functions/in_biome/swamp
-advancement revoke @s only lgp:_functions/in_biome/jungle
+advancement revoke @s only lgp:locations/in_biome/swamp
+advancement revoke @s only lgp:locations/in_biome/jungle

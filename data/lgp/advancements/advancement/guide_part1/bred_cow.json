@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:advancement/guide_part1/get_leather",
+  "criteria": {
+    "bred_cow": {
+      "trigger": "minecraft:bred_animals",
+      "conditions": {
+        "child": [
+          {
+            "condition": "entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:cow"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "让两只牛繁殖后代",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:leather"
+    },
+    "show_toast": true,
+    "title": "需要稳定收入"
+  },
+  "requirements": [
+    ["bred_cow"]
+  ]
+}

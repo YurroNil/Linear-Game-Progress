@@ -1,0 +1,36 @@
+{
+  "parent": "lgp:advancement/chapter_2/enter_the_jungle",
+  "criteria": {
+    "kill_the_beequeen": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:entities/boss/is_queenbee"
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"在丛林神庙召唤蜂后并将其击杀\n\n"},{"text":"进度完成奖励：兔子皮*18","color":"yellow"}]},
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:honey_block"
+    },
+    "show_toast": true,
+    "title": "New Bee！"
+  },
+  "requirements": [
+    [
+      "kill_the_beequeen"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "lgp:advancement/chapter_2/kill_queenbee_rewards"
+  }
+}

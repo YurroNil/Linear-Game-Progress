@@ -1,7 +1,7 @@
 #远古守卫者BOSS生成
     #添加tag
     #设置
-    execute at @e[tag=player.group,tag=!player.operTags] as @e[type=elder_guardian,predicate=lgp:in_structure/monument,tag=!lgp.elderGuardian_Inited,distance=..100,limit=1] at @s run function lgp:entities/boss/elder_guardian/add_tags/root
+    execute at @e[tag=player.group,tag=!player.operTags] as @e[type=elder_guardian,predicate=lgp:locations/in_structure/monument,tag=!lgp.elderGuardian_Inited,distance=..100,limit=1] at @s run function lgp:entities/boss/elder_guardian/add_tags/root
 
 #bossbar
     function lgp:entities/boss/elder_guardian/set_bossbar

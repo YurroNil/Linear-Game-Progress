@@ -1,5 +1,5 @@
 #BOSS生成
-    execute if entity @a[scores={lgp.worldProcess=6..}] if score slimeKing.allowSummon lgp.world matches 1 as @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:in_biome/mangrove_swamp] at @s unless entity @e[type=slime,tag=lgp.slimeKing,predicate=lgp:in_biome/mangrove_swamp,distance=..300] run tag @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:in_biome/mangrove_swamp,limit=1] add lgp.slimeKing.summonMarker
+    execute if entity @a[scores={lgp.worldProcess=6..}] if score slimeKing.allowSummon lgp.world matches 1 as @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:locations/in_biome/mangrove_swamp] at @s unless entity @e[type=slime,tag=lgp.slimeKing,predicate=lgp:locations/in_biome/mangrove_swamp,distance=..300] run tag @e[type=#uin:tech/hostile,tag=!lgp.slimeVerified,predicate=lgp:locations/in_biome/mangrove_swamp,limit=1] add lgp.slimeKing.summonMarker
     #生成史莱姆王
     execute at @e[tag=lgp.slimeKing.summonMarker] run function lgp:entities/boss/slimeking/summon
     #初始化
@@ -9,7 +9,7 @@
 
     #reset
     tag @e[tag=lgp.slimeKing.summonMarker] remove lgp.slimeKing.summonMarker
-    tag @e[type=#uin:tech/hostile,tag=!lgp.slimeKing,predicate=lgp:in_biome/mangrove_swamp] add lgp.slimeVerified
+    tag @e[type=#uin:tech/hostile,tag=!lgp.slimeKing,predicate=lgp:locations/in_biome/mangrove_swamp] add lgp.slimeVerified
 
 #史莱姆王bossbar
     execute unless entity @e[tag=lgp.slimeKing] run bossbar remove slime_king

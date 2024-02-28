@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:advancement/guide_part1/mine_stone",
+  "criteria": {
+    "furnace": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:furnace"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "合成一个熔炉",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:furnace"
+    },
+    "show_toast": true,
+    "title": "“热”门话题"
+  },
+  "requirements": [
+    [
+      "furnace"
+    ]
+  ]
+}

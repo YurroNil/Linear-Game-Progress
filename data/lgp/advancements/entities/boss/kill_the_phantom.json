@@ -1,0 +1,24 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "kill_the_phantom": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:entities/boss/is_phantom"
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "requirements": [
+    [
+      "kill_the_phantom"
+    ]
+  ],
+  "rewards": {
+    "function": "lgp:entities/boss/phantom/bekilled"
+  }
+}

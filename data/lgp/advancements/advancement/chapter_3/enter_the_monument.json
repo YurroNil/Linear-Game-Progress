@@ -1,0 +1,42 @@
+{
+  "parent": "lgp:advancement/chapter_3/activate_conduit",
+  "criteria": {
+    "enter_the_monument": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_structure/monument"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 8
+              }
+            
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"通过制图师交换获取海底神殿藏宝图并找到海底神殿.记得带门，越多越好！"},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:filled_map",
+      "nbt": "{display:{MapColor:3830373}}"
+    },
+    "show_toast": true,
+    "title": "不小心进入了谁的家"
+  },
+  "requirements": [
+    ["enter_the_monument"]
+  ]
+}

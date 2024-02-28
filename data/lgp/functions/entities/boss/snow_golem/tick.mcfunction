@@ -6,9 +6,9 @@
     execute as @e[type=minecraft:snow_golem,tag=!lgp.snowGolem,tag=lgp.BOSS] run function lgp:entities/boss/snow_golem/model
     tag @e[type=minecraft:snow_golem,tag=!lgp.snowGolem,tag=lgp.BOSS] add lgp.snowGolem
     #生命恢复
-    effect give @e[type=minecraft:snow_golem,predicate=!lgp:effect/regeneration] minecraft:regeneration infinite 0 true
+    effect give @e[type=minecraft:snow_golem,predicate=!lgp:entities/mob_modify/effect/regeneration] minecraft:regeneration infinite 0 true
  #无法在雪地外的环境下生存
-    execute as @e[type=snow_golem,tag=!lgp.snowGolem,predicate=!lgp:in_biome/tech/snowy_all] run damage @s 1.0 minecraft:in_fire at ~ ~ ~
+    execute as @e[type=snow_golem,tag=!lgp.snowGolem,predicate=!lgp:locations/in_biome/tech/snowy_all] run damage @s 1.0 minecraft:in_fire at ~ ~ ~
 
 #bossbar
     execute unless entity @e[tag=lgp.snowGolem] run bossbar remove lgp_snow_golem

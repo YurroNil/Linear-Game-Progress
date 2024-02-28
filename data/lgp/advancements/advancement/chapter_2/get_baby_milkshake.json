@@ -1,0 +1,47 @@
+{
+  "parent": "lgp:advancement/chapter_2/get_melonslice",
+  "criteria": {
+    "get_baby_milkshake": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:milk_bucket"
+            ],
+            "nbt": "{lgpTags:\"baby_milkshake\"}"
+          }
+        ],
+        "player": [
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 5
+              }
+            
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用以下材料即可合成宝宝奶昔(丢地上)：南瓜派、甜浆果、蜂蜜块、蜜脾块、西瓜方块和奶桶.",
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:milk_bucket"
+    },
+    "show_toast": true,
+    "title": "宝宝奶昔？！       "
+  },
+  "requirements": [
+    [
+      "get_baby_milkshake"
+    ]
+  ]
+}

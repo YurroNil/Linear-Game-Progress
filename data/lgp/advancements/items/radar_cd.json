@@ -1,0 +1,9 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "impossible": {"trigger": "minecraft:impossible"}
+  },
+	"rewards": {
+		"function": "lgp:items/radar/cooldown/tick"
+	}
+}

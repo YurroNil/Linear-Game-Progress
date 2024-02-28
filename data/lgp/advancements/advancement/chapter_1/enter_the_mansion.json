@@ -1,0 +1,42 @@
+{
+  "parent": "lgp:advancement/chapter_1/enter_the_dark_forest",
+  "criteria": {
+    "in_the_mansion": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_structure/mansion"
+          },
+          {
+            "condition": "minecraft:entity_scores",
+            "entity": "this",
+            "scores": {
+              "lgp.worldProcess": {
+                "max": 2147483647,
+                "min": 4
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "进入林地府邸",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:dark_oak_wood"
+    },
+    "show_toast": true,
+    "title": "来偷家了"
+  },
+  "requirements": [
+    [
+      "in_the_mansion"
+    ]
+  ]
+}

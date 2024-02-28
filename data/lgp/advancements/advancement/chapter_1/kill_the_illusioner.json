@@ -1,0 +1,36 @@
+{
+  "parent": "lgp:advancement/chapter_1/enter_the_mansion",
+  "criteria": {
+    "kill_the_illusioner": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:entities/boss/is_illusioner"
+          }
+        ]
+      },
+      "trigger": "minecraft:player_killed_entity"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"打败幻术师\n\n"},{"text":"进度完成奖励：指南针*1,磁石*1","color":"yellow"}]},
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "item": "minecraft:bow"
+    },
+    "show_toast": true,
+    "title": "看看谁才是老大！"
+  },
+  "requirements": [
+    [
+      "kill_the_illusioner"
+    ]
+  ],
+  "rewards": {
+    "experience": 300,
+    "function": "lgp:advancement/chapter_1/kill_the_illusioner_rewards"
+  }
+}

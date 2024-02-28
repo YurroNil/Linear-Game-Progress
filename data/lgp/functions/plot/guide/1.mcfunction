@@ -17,6 +17,6 @@ execute if score guide.1 lgp.plot matches 550 as @a at @s run playsound minecraf
 execute if score guide.1 lgp.plot matches 700 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"确实，你至少需要一套装备。在做装备之前，先做个石镐吧！"}]}
 execute if score guide.1 lgp.plot matches 700 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score guide.1 lgp.plot matches 900.. run advancement grant @a only lgp:guide_part1/plot_tips1
+execute if score guide.1 lgp.plot matches 900.. run advancement grant @a only lgp:advancement/guide_part1/plot_tips1
 
 execute if score guide.1 lgp.plot matches 900.. run scoreboard players reset guide.1.loop lgp.plot

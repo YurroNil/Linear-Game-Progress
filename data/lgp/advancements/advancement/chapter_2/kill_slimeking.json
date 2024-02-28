@@ -1,0 +1,22 @@
+{
+  "parent": "lgp:advancement/chapter_2/enter_the_mangrove",
+  "criteria": {
+    "impossible": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"在红树林沼泽生物群系找到史莱姆王，并将其击杀"}]},
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:slime_block"
+    },
+    "show_toast": true,
+    "title": "我的天好大一果冻！"
+  },
+  "rewards": {
+    "experience": 300
+  }
+}

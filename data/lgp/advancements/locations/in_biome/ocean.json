@@ -1,0 +1,37 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "ocean": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_biome/tech/ocean_all"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 8}
+              }
+            }
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:entities/player_modify/go_underwater"
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  
+  "requirements": [
+    ["ocean"]
+  ],
+	"rewards": {
+		"function": "lgp:entities/player_modify/effects/damaged/drown_damage"
+	}
+}

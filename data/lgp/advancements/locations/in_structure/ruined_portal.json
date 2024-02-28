@@ -1,0 +1,26 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "ruined_portal": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_structure/ruined_portal"
+          },
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_dimension/overworld"
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    ["ruined_portal"]
+  ],
+	"rewards": {
+		"function": "lgp:locations/worldgen_loop/protal/the_nether/allow_enter"
+	}
+}

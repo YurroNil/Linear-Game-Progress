@@ -1,5 +1,5 @@
 #设置BOSS
-    execute if score pillagerCaptain.allowSummon lgp.world matches 1 if entity @a[scores={lgp.worldProcess=1..}] unless score inRaiders lgp.raiders matches 1 at @a unless entity @e[predicate=lgp:is_pillager_captain,tag=lgp.pillagerCaptain] as @e[tag=!lgp.pillagerCaptain,limit=1,predicate=lgp:is_pillager_captain] run function lgp:entities/boss/pillager_captain/model
+    execute if score pillagerCaptain.allowSummon lgp.world matches 1 if entity @a[scores={lgp.worldProcess=1..}] unless score inRaiders lgp.raiders matches 1 at @a unless entity @e[predicate=lgp:entities/mob_modify/is_pillager_captain,tag=lgp.pillagerCaptain] as @e[tag=!lgp.pillagerCaptain,limit=1,predicate=lgp:entities/mob_modify/is_pillager_captain] run function lgp:entities/boss/pillager_captain/model
 
 #bossbar
     execute unless entity @e[tag=lgp.pillagerCaptain] run bossbar remove pillager_captain

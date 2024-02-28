@@ -1,0 +1,32 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "swamps": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_biome/tech/swamps_all"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 6}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    ["swamps"]
+  ],
+	"rewards": {
+		"function": "lgp:entities/player_modify/effects/damaged/poison_damage"
+	}
+}

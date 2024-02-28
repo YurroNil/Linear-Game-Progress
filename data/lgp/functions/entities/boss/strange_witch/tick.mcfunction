@@ -1,5 +1,5 @@
 #设置BOSS
-    execute as @e[type=minecraft:witch,predicate=lgp:in_structure/swamp_hut,tag=!lgp.strangeWitch] run function lgp:entities/boss/strange_witch/model
+    execute as @e[type=minecraft:witch,predicate=lgp:locations/in_structure/swamp_hut,tag=!lgp.strangeWitch] run function lgp:entities/boss/strange_witch/model
  
 #bossbar
     execute unless entity @e[tag=lgp.strangeWitch] run bossbar remove strange_witch

@@ -1,0 +1,32 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "jungle": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:locations/in_biome/jungle"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.worldProcess": {"max": 2147483647,"min": 5}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    ["jungle"]
+  ],
+	"rewards": {
+		"function": "lgp:entities/player_modify/effects/damaged/poison_damage"
+	}
+}

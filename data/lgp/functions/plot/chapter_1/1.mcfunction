@@ -11,6 +11,6 @@ execute if score chapter1.1 lgp.plot matches 200 as @a at @s run playsound minec
 execute if score chapter1.1 lgp.plot matches 300 run tellraw @a {"text":"","extra":[{"text":"<村民向导> "},{"text":"你是我们全村的希望！去寻找掠夺者前哨站吧，我们会等你的好消息！"}]}
 execute if score chapter1.1 lgp.plot matches 300 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score chapter1.1 lgp.plot matches 400.. run advancement grant @a only lgp:chapter_1/plot_tips1
+execute if score chapter1.1 lgp.plot matches 400.. run advancement grant @a only lgp:advancement/chapter_1/plot_tips1
 
 execute if score chapter1.1 lgp.plot matches 400.. run scoreboard players reset chapter1.1.loop lgp.plot

@@ -12,5 +12,5 @@
 
 #完成
     tag @s add lgp.elderGuardian_Inited
-    tag @e[predicate=lgp:in_structure/monument,type=#lgp:guardians] add lgp.guardian.type
+    tag @e[predicate=lgp:locations/in_structure/monument,type=#lgp:guardians] add lgp.guardian.type
     
