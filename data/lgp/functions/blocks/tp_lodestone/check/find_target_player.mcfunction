@@ -1,0 +1,1 @@
+execute on target if entity @s[tag=lgp.player.this] run return 1

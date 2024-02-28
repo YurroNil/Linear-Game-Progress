@@ -6,6 +6,8 @@ scoreboard players operation @s lgp.tp_lodestone.index = @e[tag=lgp.tp_lodestone
 
 tag @e[tag=lgp.tp_lodestone.bearer,sort=nearest,limit=1,distance=..1] add lgp.kill
 
+tellraw @a [{"score":{"objective": "lgp.tp_lodestone.index", "name": "@s"}}]
+
 execute if score @s lgp.tp_lodestone.index matches 0 run data modify entity @e[tag=lgp.tp_lodestone.bearer,sort=nearest,limit=1,distance=..1] Pos set from storage lgp:blocks/tp_lodestone destination_list[0].pos
 execute if score @s lgp.tp_lodestone.index matches 1 run data modify entity @e[tag=lgp.tp_lodestone.bearer,sort=nearest,limit=1,distance=..1] Pos set from storage lgp:blocks/tp_lodestone destination_list[1].pos
 execute if score @s lgp.tp_lodestone.index matches 2 run data modify entity @e[tag=lgp.tp_lodestone.bearer,sort=nearest,limit=1,distance=..1] Pos set from storage lgp:blocks/tp_lodestone destination_list[2].pos

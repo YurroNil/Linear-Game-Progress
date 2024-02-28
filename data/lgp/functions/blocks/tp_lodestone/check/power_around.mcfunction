@@ -1,0 +1,1 @@
+execute if entity @e[distance=..2,type=item,nbt={Item:{id:"minecraft:amethyst_shard"}}] run return 1 
