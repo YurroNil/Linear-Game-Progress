@@ -12,10 +12,10 @@
       ],
       "entries": [
         {
-          "type": "minecraft:any_ofs",
+          "type": "minecraft:any_of",
           "children": [
             {
-              "type": "minecraft:any_ofs",
+              "type": "minecraft:any_of",
               "children": [
                 {
                   "type": "minecraft:item",
@@ -198,7 +198,7 @@
               ]
             },
             {
-              "type": "minecraft:any_ofs",
+              "type": "minecraft:any_of",
               "children": [
                 {
                   "type": "minecraft:item",

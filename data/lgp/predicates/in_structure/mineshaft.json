@@ -1,5 +1,5 @@
 {
-    "condition": "any_of",
+    "condition": "minecraft:any_of",
     "terms": [
         {
             "condition": "minecraft:entity_properties",

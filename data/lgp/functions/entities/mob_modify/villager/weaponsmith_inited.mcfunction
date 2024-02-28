@@ -4,4 +4,4 @@
     data modify entity @s Offers.Recipes[6].sell.id set value "minecraft:wooden_axe"
     data modify entity @s Offers.Recipes[7].sell.id set value "minecraft:wooden_sword"
 
-scoreboard players operation @s lgp.villagerData = @s player.air
+scoreboard players operation @s lgp.villagerData = @s lgp.villagerLevel

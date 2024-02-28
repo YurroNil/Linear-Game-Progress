@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide_part1/wooden_axe",
+  "criteria": {
+    "wooden_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:wooden_pickaxe"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用皮革、木板和木棍在工作台合成一把木镐",
+    "frame": "goal",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:wooden_pickaxe"
+    },
+    "show_toast": true,
+    "title": "木器时代"
+  },
+  "requirements": [
+    [
+      "wooden_pickaxe"
+    ]
+  ]
+}

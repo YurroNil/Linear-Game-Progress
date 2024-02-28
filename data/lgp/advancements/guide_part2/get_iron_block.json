@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide_part2/get_copper_ingot",
+  "criteria": {
+    "iron_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:iron_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "合成一个铁块",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:iron_block"
+    },
+    "show_toast": true,
+    "title": "来超硬硬的"
+  },
+  "requirements": [
+    [
+      "iron_block"
+    ]
+  ]
+}

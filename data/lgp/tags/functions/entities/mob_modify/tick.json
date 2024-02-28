@@ -8,7 +8,8 @@
     "lgp:entities/mob_modify/vex",
     "lgp:entities/mob_modify/ravager",
     "lgp:entities/mob_modify/vindicator",
-    "lgp:entities/mob_modify/iron_golem"
+    "lgp:entities/mob_modify/iron_golem",
+    "lgp:entities/mob_modify/mob_horse/tick"
 
   ]
 }

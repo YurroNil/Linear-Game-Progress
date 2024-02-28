@@ -9,6 +9,7 @@ execute if score chapter1.2 lgp.plot matches 200 run tellraw @a {"text":"","extr
 execute if score chapter1.2 lgp.plot matches 200 as @a at @s run playsound minecraft:entity.villager.no voice @s ~ ~ ~ 100 1 1
 
 execute if score chapter1.2 lgp.plot matches 300 run tellraw @a {"text":"","extra":[{"text":"<村民D> "},{"text":"大家快躲起来！勇者，交给你了！"}]}
+execute if score chapter1.2 lgp.plot matches 300 as @p run function lgp:advancement/chapter_1/raid_begins_rewards2
 execute if score chapter1.2 lgp.plot matches 300 as @a at @s run playsound minecraft:entity.villager.ambient voice @s ~ ~ ~ 100 1 1
 
 execute if score chapter1.2 lgp.plot matches 300.. run scoreboard players reset chapter1.2.loop lgp.plot

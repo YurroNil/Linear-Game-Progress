@@ -11,15 +11,12 @@ execute if score guide.1 lgp.plot matches 200 as @a at @s run playsound minecraf
 execute if score guide.1 lgp.plot matches 350 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"如果你成功击败他们的首领，我们就会告诉你去往末地的方法。同时以后也会在你打败末影龙的路上为你提供帮助。"}]}
 execute if score guide.1 lgp.plot matches 350 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score guide.1 lgp.plot matches 550 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"其实我们也不知道他们首领在哪。但我听说有一些灾厄村民会在一个叫"},{"text":"掠夺者前哨站","color":"aqua","bold":true},{"text":"的地方扎营，说不定能从那里得到首领或老巢的信息！"}]}
+execute if score guide.1 lgp.plot matches 550 run tellraw @a {"text":"","extra":[{"text":"<村民向导> "},{"text":"在此之前，我觉得你应该先把自己变的强大些，你现在看起来什么都没有..."}]}
 execute if score guide.1 lgp.plot matches 550 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score guide.1 lgp.plot matches 700 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"不过要小心！他们可是很厉害的，他们的人数，装备和武器都在我们之上。我们也建议你在"},{"text":"拥有铁套和铁器后","color":"aqua","bold":true},{"text":"再去袭击掠夺者前哨站。"}]}
+execute if score guide.1 lgp.plot matches 700 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"确实，你至少需要一套装备。在做装备之前，先做个石镐吧！"}]}
 execute if score guide.1 lgp.plot matches 700 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
 
-execute if score guide.1 lgp.plot matches 800 run tellraw @a {"text":"","extra":[{"text":"<村长> "},{"text":"如果你需要做准备，我们会尽力给你提供物资帮助。"}]}
-execute if score guide.1 lgp.plot matches 800 as @a at @s run playsound minecraft:entity.villager.celebrate voice @s ~ ~ ~ 100 1 1
-
-execute if score guide.1 lgp.plot matches 900.. run advancement grant @a only lgp:guide/plot_tips1
+execute if score guide.1 lgp.plot matches 900.. run advancement grant @a only lgp:guide_part1/plot_tips1
 
 execute if score guide.1 lgp.plot matches 900.. run scoreboard players reset guide.1.loop lgp.plot

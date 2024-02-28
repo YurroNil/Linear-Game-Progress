@@ -1,4 +1,4 @@
-function lgp:items/radar/get_info/search/do
+function lgp:items/radar/get_info/search/main
 execute if score getInfo.tempScore lgp.radar.rightClick matches -2147483648..2147483647 run tellraw @a[tag=lgp.radar.rightClick] {"text":"","extra":[{"text":"暖水海洋生物群系","color":"blue"},{"text":"最近一个生物距离你约有"},{"score":{"name": "getInfo.tempScore","objective": "lgp.radar.rightClick"},"color":"yellow"},{"text":"格."}]}
 scoreboard players reset getInfo.tempScore lgp.radar.rightClick
 scoreboard players set #noResults lgp.radar.rightClick 0

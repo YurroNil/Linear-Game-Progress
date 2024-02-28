@@ -14,29 +14,25 @@
 
     #Entities(生物)
 
-        #player_modifiy(玩家)
-            scoreboard objectives add player.air air
-            scoreboard objectives add player.hunger food
-            scoreboard objectives add player.badOmen dummy
-
-        #mob_modifiy(怪物)
-            scoreboard objectives add lgp.villagerData dummy
-
+        #mob_modifiy(生物)
+            #村民
+                scoreboard objectives add lgp.villagerData dummy
+                scoreboard objectives add lgp.villagerLevel dummy
+                
+            #怪物装备
+                scoreboard objectives add lgp.equip.rec dummy
+                scoreboard objectives add lgp.equip.slotIndex dummy
+                scoreboard objectives add lgp.equip.aecDuration dummy
     #玩家
     scoreboard objectives add player.air air
     scoreboard objectives add player.hunger food
     scoreboard objectives add player.badOmen dummy
-            #怪物装备
-            scoreboard objectives add lgp.equip.rec dummy
-            scoreboard objectives add lgp.equip.slotIndex dummy
-            scoreboard objectives add lgp.equip.aecDuration dummy
 
     #items(物品)
         #雷达
             scoreboard objectives add lgp.radar dummy
             scoreboard objectives add lgp.radarMode dummy
             scoreboard objectives add lgp.radar.rightClick dummy
-
 
     #blocks(方块)
         scoreboard objectives add lgp.tp_lodestone dummy
@@ -57,7 +53,8 @@
     #gamerule universalAnger false
     #gamerule reducedDebugInfo true
     #difficulty hard
-    #如果加载forge的话，需要禁用forge的数据包，不然原版数据包会被forge数据包覆盖，然后LGP数据包就无法更改原版数据包的东西了，例如更改MC原版配方、战利品表、结构等等。
+ 
+    #如果加载forge则需要禁用ForgeAPI的数据包，否则原版数据包会被forge数据包覆盖，LGP数据包无法更改原版数据包的战利品表、配方、结构...等等。
     datapack disable "mod:forge"
 
 #数据存储

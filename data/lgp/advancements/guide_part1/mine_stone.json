@@ -1,0 +1,31 @@
+{
+  "parent": "lgp:guide_part1/wooden_pickaxe",
+  "criteria": {
+    "get_stone": {
+      "conditions": {
+        "items": [
+          {
+            "tag": "minecraft:stone_tool_materials"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": "用木镐挖掘石头",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:cobblestone"
+    },
+    "show_toast": true,
+    "title": "准石器时代"
+  },
+  "requirements": [
+    [
+      "get_stone"
+    ]
+  ]
+}

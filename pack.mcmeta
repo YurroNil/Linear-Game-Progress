@@ -1,21 +1,21 @@
 {
     "pack": {
-        "pack_format": 12,
+        "pack_format": 26,
         "description": {
-            "text": "线性游戏流程数据包\n",
+            "text": "线性游戏流程(Linear-Game-Progress)\n",
             "extra": [
                 {
                     "text": "数据包作者: "
                 },
                 {
-                    "text": "Yurro_nil\n",
+                    "text": "MoeYorako, luobojuo\n",
                     "color": "#B22222"
                 },
                 {
                     "text": "版本: "
                 },
                 {
-                    "text": "beta001(2023.5.8)",
+                    "text": "beta1.0.0(2024.2.26)",
                     "color": "#00CED1"
                 }
             ]

@@ -1,7 +1,8 @@
 {
   "replace": false,
   "values": [
-    "lgp:advancement/guide/tick",
+    "lgp:advancement/guide_part1/tick",
+    "lgp:advancement/guide_part2/tick",
     "lgp:advancement/chapter_1/tick",
     "lgp:advancement/chapter_2/tick",
     "lgp:advancement/chapter_3/tick"

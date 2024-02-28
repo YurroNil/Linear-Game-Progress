@@ -15,5 +15,8 @@
     },
     "show_toast": true,
     "title": "已更新当前主线任务"
+  },
+  "rewards": {
+    "function": "lgp:advancement/chapter_1/plot_tips1_rewards"
   }
 }

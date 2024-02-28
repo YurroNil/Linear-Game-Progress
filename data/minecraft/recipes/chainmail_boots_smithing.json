@@ -1,5 +1,5 @@
 {
-  "type": "minecraft:smithing",
+  "type": "minecraft:smithing_transform",
   "addition": {
     "item": "minecraft:chain"
   },
@@ -8,5 +8,8 @@
   },
   "result": {
     "item": "minecraft:chainmail_boots"
+  },
+  "template": {
+    "tag": "lgp:hard_metal_ingots"
   }
 }

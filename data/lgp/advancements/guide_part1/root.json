@@ -1,0 +1,22 @@
+{
+  "criteria": {
+    "start": {
+        "trigger": "minecraft:tick"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:textures/gui/advancements/backgrounds/stone.png",
+    "description": "在\"序章(上篇)\"进度中会引到你游玩本数据包初期发展游戏进度.",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:book"
+    },
+    "show_toast": false,
+    "title": "序章(上篇)"
+  },
+  "rewards": {
+    "function": "lgp:player_init"
+  }
+}

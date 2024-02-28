@@ -8,7 +8,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": {"text":"","extra":[{"text":"成功在袭击中保卫村庄\n\n"},{"text":"进度完成奖励：附魔木剑*1,附魔书*1,金苹果系列","color":"yellow"}]},
+    "description": {"text":"","extra":[{"text":"成功在袭击中保卫村庄\n\n"},{"text":"进度完成奖励：铁块*8,绿宝石*64,附魔木剑*1,附魔书*1,金苹果系列","color":"yellow"}]},
     "frame": "challenge",
     "hidden": true,
     "icon": {

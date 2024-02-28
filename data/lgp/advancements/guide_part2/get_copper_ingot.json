@@ -1,0 +1,33 @@
+{
+  "parent": "lgp:guide_part2/plot_tips2",
+  "criteria": {
+    "copper_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:copper_ingot"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {"text":"","extra":[{"text":"获取一块铜锭"}]},
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:copper_ingot"
+    },
+    "show_toast": true,
+    "title": "来硬硬的"
+  },
+  "requirements": [
+    [
+      "copper_ingot"
+    ]
+  ]
+}

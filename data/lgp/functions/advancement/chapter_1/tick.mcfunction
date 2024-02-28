@@ -7,10 +7,7 @@
 #解锁第二章
     execute if entity @a[scores={lgp.worldProcess=5..}] run advancement grant @a only lgp:chapter_1/end
     execute if entity @a[scores={lgp.worldProcess=5..}] run advancement grant @a only lgp:chapter_2/root
-    execute if entity @a[scores={lgp.worldProcess=5..}] run advancement grant @a only lgp:chapter_2/collect_branch
-    execute if entity @a[scores={lgp.worldProcess=5..}] run advancement grant @a only lgp:chapter_2/explore_branch
     
-
 #设置进程分数
     scoreboard players set @a[scores={lgp.worldProcess=1},advancements={lgp:chapter_1/root=true}] lgp.worldProcess 2
     scoreboard players set @a[scores={lgp.worldProcess=..2},advancements={lgp:chapter_1/hero_of_the_village=true}] lgp.worldProcess 3

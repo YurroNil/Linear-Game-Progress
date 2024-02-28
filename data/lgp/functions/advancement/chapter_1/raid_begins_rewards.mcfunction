@@ -1,0 +1,1 @@
+execute unless entity @a[scores={lgp.worldProcess=3..}] run scoreboard players set chapter1.2.loop lgp.plot 1

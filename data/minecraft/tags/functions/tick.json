@@ -9,6 +9,7 @@
     "#lgp:event/tick",
     "#lgp:items/tick",
     "#lgp:blocks/tick",
-    "#lgp:locations/tick"
+    "#lgp:locations/tick",
+    "#lgp:plot/tick"
  ]
 }
