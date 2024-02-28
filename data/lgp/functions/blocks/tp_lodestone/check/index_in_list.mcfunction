@@ -1,0 +1,1 @@
+$execute if data storage lgp:tp_lodestone destination_list[{index:$(idx)}] return 1

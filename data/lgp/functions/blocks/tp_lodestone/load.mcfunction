@@ -1,6 +1,22 @@
-#初始化列表
-    execute unless data storage lgp:blocks/tp_lodestone destination_list run data merge storage lgp:blocks/tp_lodestone {destination_list:[]}
+#加载所需记分板
+    scoreboard objectives add lgp.tp_lodestone.power dummy
+    scoreboard objectives add lgp.tp_lodestone.var dummy
+    scoreboard objectives add lgp.tp_lodestone.index dummy
+    scoreboard objectives add lgp.tp_lodestone.tp_timer dummy
+    #scoreboard objectives add lgp.tp_lodestone.leftClick dummy
+    #scoreboard objectives add lgp.tp_lodestone.rightClick dummy
 
-#初始化列表元素
-    execute store result score #lgp.tmp lgp.int run data get storage lgp:blocks/tp_lodestone destination_list
-    execute if score #lgp.tmp lgp.int matches 0 run function lgp:blocks/tp_lodestone/load/append_new_element
+#加载属性
+    scoreboard players add #current_place_index lgp.tp_lodestone.var 0
+    #define score_holder #current_place_index
+    scoreboard players set #max_index lgp.tp_lodestone.var 15
+    #define score_holder #max_index
+    
+#加载命令存储
+    execute unless data storage lgp:blocks/tp_lodestone destination_list run data modify storage lgp:blocks/tp_lodestone destination_list set value []
+    #define storage lgp:blocks/tp_lodestone
+
+#加载游标
+    function lgp:blocks/tp_lodestone/cursor/load
+
+say tp_lodestone.load

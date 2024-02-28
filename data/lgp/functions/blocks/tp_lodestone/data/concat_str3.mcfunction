@@ -1,0 +1,1 @@
+$data modify storage lgp:blocks/tp_lodestone output.arg1 set value '[{"text":$(str1)},{"text":$(str2)},{"text":$(str3)}]'
