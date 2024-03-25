@@ -7,7 +7,7 @@
             "entity":"this",
             "predicate":{
                 "location": {
-                    "biome": "minecraft:lush_caves"
+                    "biome": "minecraft:ocean"
                 }
             }
         },
@@ -16,7 +16,7 @@
             "entity":"this",
             "predicate":{
                 "location": {
-                    "biome": "minecraft:dripstone_caves"
+                    "biome": "minecraft:cold_ocean"
                 }
             }
         },
@@ -25,13 +25,27 @@
             "entity":"this",
             "predicate":{
                 "location": {
-                    "biome": "minecraft:deep_dark"
+                    "biome": "minecraft:warm_ocean"
                 }
             }
         },
         {
-            "condition": "minecraft:reference",
-            "name": "lgp:locations/in_biome/tech/height_below_45"
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:frozen_ocean"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:lukewarm_ocean"
+                }
+            }
         }
     ]
 }

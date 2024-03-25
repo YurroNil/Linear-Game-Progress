@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_scores",
+            "entity":"this",
+            "scores": {
+                "lgp.PosY":{
+                "max": 45,
+                "min": -2147483648
+                }
+            }
+        },
+        {
+            "condition": "minecraft:inverted",
+            "term": {
+                "condition": "minecraft:reference",
+                "name": "lgp:locations/in_biome/tech/all_caves"
+            }
+        }
+    ]
+  }

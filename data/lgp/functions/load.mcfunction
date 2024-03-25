@@ -34,6 +34,10 @@
             scoreboard objectives add lgp.radarMode dummy
             scoreboard objectives add lgp.radar.rightClick dummy
 
+        #末影图腾
+        scoreboard objectives add lgp.enderTotem_level dummy
+
+
     #blocks(方块)
         scoreboard objectives add lgp.tp_lodestone dummy
         scoreboard objectives add lgp.tp_lodestone.activatedSuccess dummy

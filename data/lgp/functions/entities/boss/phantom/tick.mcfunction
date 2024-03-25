@@ -10,12 +10,15 @@
     #一阶段
     tag @e[tag=lgp.phantom,tag=!lgp.phantom.phase3,tag=!lgp.phantom.phase2,scores={lgp.phantom.health=130..}] add lgp.phantom.phase1
     #二阶段
-    tag @e[tag=lgp.phantom,tag=!lgp.phantom.phase3,scores={lgp.phantom.health=71..129}] add lgp.phantom.phase2
+    tag @e[tag=lgp.phantom,tag=!lgp.phantom.phase3,scores={lgp.phantom.health=101..150}] add lgp.phantom.phase2
     tag @e[tag=lgp.phantom.phase2] remove lgp.phantom.phase1
     #三阶段
-    tag @e[tag=lgp.phantom,scores={lgp.phantom.health=..70}] add lgp.phantom.phase3
+    tag @e[tag=lgp.phantom,scores={lgp.phantom.health=51..100}] add lgp.phantom.phase3
     tag @e[tag=lgp.phantom.phase3] remove lgp.phantom.phase2
     tag @e[tag=lgp.phantom.phase3] remove lgp.phantom.phase1
+
+    #四阶段
+    tag @e[tag=lgp.phantom,scores={lgp.phantom.health=..50}] add lgp.phantom.phase4
 
 #bossbar
     execute unless entity @e[tag=lgp.phantom] run bossbar remove phantom
@@ -24,9 +27,11 @@
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase1] run bossbar set phantom style progress
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase1] run bossbar set phantom color blue
     #二阶段紫色
+    execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase2] run bossbar set phantom name "恐怖之翼(四大护法之一)"
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase2] run bossbar set phantom style notched_6
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase2] run bossbar set phantom color purple
     #三阶段红色
+    execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase3] run bossbar set phantom name "恐怖之翼(四大护法之一)"
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase3] run bossbar set phantom style notched_6
     execute at @a at @e[sort=nearest,limit=1,tag=lgp.phantom,tag=lgp.phantom.phase3] run bossbar set phantom color red
 
@@ -64,8 +69,8 @@
     #取消无敌
     execute unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=lgp.phantom.canSprinting,tag=!lgp.phantom.sprinting] at @s if entity @e[tag=player.group,tag=!player.operTags,sort=nearest,limit=1,distance=..4] run data merge entity @s {Invulnerable:0b,Glowing:1b}
     #无敌
-    execute if entity @p[tag=!player.operTags,distance=..50] unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=lgp.phantom.canSprinting,tag=!lgp.phantom.sprinting] at @s unless entity @e[tag=player.group,tag=!player.operTags,sort=nearest,limit=1,distance=..4] run data merge entity @s {Invulnerable:1b,Glowing:0b}
+    execute unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=lgp.phantom.canSprinting,tag=!lgp.phantom.sprinting] at @s unless entity @e[tag=player.group,tag=!player.operTags,sort=nearest,limit=1,distance=..4] run data merge entity @s {Invulnerable:1b,Glowing:0b}
 
 #三阶段生怪
-    execute if entity @p[tag=!player.operTags,distance=..50] as @e[tag=lgp.phantom.phase3] at @s if entity @e[tag=player.group,scores={lgp.PosY=50..},tag=!player.operTags,distance=..50] run scoreboard players add @s lgp.phantom.summonSkill 1
+    execute as @e[tag=lgp.phantom.phase3] at @s if entity @e[tag=player.group,scores={lgp.PosY=50..},tag=!player.operTags,distance=..50] run scoreboard players add @s lgp.phantom.summonSkill 1
     execute as @e[tag=lgp.phantom,scores={lgp.phantom.summonSkill=467..}] at @s run function lgp:entities/boss/phantom/summon_submobs

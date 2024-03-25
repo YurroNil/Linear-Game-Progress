@@ -1,0 +1,32 @@
+{
+  "parent": "lgp:root",
+  "criteria": {
+    "endercause_lv6": {
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:reference",
+            "name": "lgp:world/curse/ender/lv6"
+          },
+          {
+            "condition": "inverted",
+            "term":{
+              "condition": "minecraft:entity_scores",
+              "entity": "this",
+              "scores": {
+                "lgp.enderTotem_level": {"max": 2147483647,"min": 6}
+              }
+            }
+          }
+        ]
+      },
+      "trigger": "minecraft:location"
+    }
+  },
+  "requirements": [
+    ["endercause_lv6"]
+  ],
+	"rewards": {
+		"function": "lgp:world/curse/ender/lv6"
+	}
+}

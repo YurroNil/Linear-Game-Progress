@@ -1,0 +1,14 @@
+
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:locations/in_biome/dripstone_caves"
+    },
+    {
+        "condition": "minecraft:reference",
+        "name": "lgp:locations/in_biome/tech/height_below45_not_cavebiomes"
+    }
+  ]
+}

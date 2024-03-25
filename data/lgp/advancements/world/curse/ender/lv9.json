@@ -1,12 +1,12 @@
 {
   "parent": "lgp:root",
   "criteria": {
-    "swamps": {
+    "endercause_lv9": {
       "conditions": {
         "player": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:locations/in_biome/tech/swamps_all"
+            "name": "lgp:world/curse/ender/lv9"
           },
           {
             "condition": "inverted",
@@ -14,7 +14,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "lgp.worldProcess": {"max": 2147483647,"min": 6}
+                "lgp.enderTotem_level": {"max": 2147483647,"min": 9}
               }
             }
           }
@@ -24,9 +24,9 @@
     }
   },
   "requirements": [
-    ["swamps"]
+    ["endercause_lv9"]
   ],
 	"rewards": {
-		"function": "lgp:entities/player_modify/effects/damaged/poison_damage"
+		"function": "lgp:world/curse/ender/lv9"
 	}
 }

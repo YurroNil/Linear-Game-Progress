@@ -1,12 +1,12 @@
 {
   "parent": "lgp:root",
   "criteria": {
-    "jungle": {
+    "endercause_lv7": {
       "conditions": {
         "player": [
           {
             "condition": "minecraft:reference",
-            "name": "lgp:locations/in_biome/jungle"
+            "name": "lgp:world/curse/ender/lv7"
           },
           {
             "condition": "inverted",
@@ -14,7 +14,7 @@
               "condition": "minecraft:entity_scores",
               "entity": "this",
               "scores": {
-                "lgp.worldProcess": {"max": 2147483647,"min": 5}
+                "lgp.enderTotem_level": {"max": 2147483647,"min": 7}
               }
             }
           }
@@ -24,9 +24,9 @@
     }
   },
   "requirements": [
-    ["jungle"]
+    ["endercause_lv7"]
   ],
 	"rewards": {
-		"function": "lgp:entities/player_modify/effects/damaged/poison_damage"
+		"function": "lgp:world/curse/ender/lv7"
 	}
 }
