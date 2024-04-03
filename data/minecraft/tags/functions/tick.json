@@ -1,5 +1,6 @@
 {
  "values": [
+   "#lgp:locations/tick",
     "lgp:tick",
     "#lgp:entities/mob_modify/tick",
     "#lgp:world/tick",
@@ -9,7 +10,6 @@
     "#lgp:event/tick",
     "#lgp:items/tick",
     "#lgp:blocks/tick",
-    "#lgp:locations/tick",
     "#lgp:plot/tick"
  ]
 }

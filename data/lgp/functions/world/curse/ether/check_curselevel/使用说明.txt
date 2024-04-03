@@ -1,0 +1,4 @@
+
+使用说明：
+使用命令execute as <选择器> at @s run function lgp:world/curse/ether/check_curselevel/_running_commands
+会判断<选择器>所在位置的诅咒等级，并储存到计分板lgp.etherCurseLv_atCurLoc中的<选择器>目标。

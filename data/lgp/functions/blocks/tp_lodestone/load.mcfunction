@@ -18,5 +18,3 @@
 
 #加载游标
     function lgp:blocks/tp_lodestone/cursor/load
-
-say tp_lodestone.load

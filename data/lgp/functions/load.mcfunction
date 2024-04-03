@@ -2,6 +2,10 @@
     #world(世界)
         scoreboard objectives add lgp.world dummy
         scoreboard objectives add lgp.worldProcess dummy
+        #判断当前位置末影诅咒等级
+        scoreboard objectives add lgp.enderCurseLv_atCurLoc dummy
+        #判断当前位置以太诅咒等级
+        scoreboard objectives add lgp.etherCurseLv_atCurLoc dummy
 
     #计算
         function lgp:scoreboard_constants
@@ -36,7 +40,8 @@
 
         #末影图腾
         scoreboard objectives add lgp.enderTotem_level dummy
-
+        #以太图腾
+        scoreboard objectives add lgp.etherTotem_level dummy
 
     #blocks(方块)
         scoreboard objectives add lgp.tp_lodestone dummy

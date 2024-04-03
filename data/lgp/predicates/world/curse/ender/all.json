@@ -1,0 +1,46 @@
+
+{
+  "condition": "minecraft:any_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv0"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv1"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv2"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv3"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv4"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv5"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv6"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv7"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv8"
+    },
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:world/curse/ender/lv9"
+    }
+  ]
+}

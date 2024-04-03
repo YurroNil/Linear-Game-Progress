@@ -1,0 +1,46 @@
+
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:reference",
+            "name":"lgp:locations/in_biome/savanna"
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:meadow"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:meadow"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:sunflower_plains"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:plains"
+                }
+            }
+        }
+    ]
+}

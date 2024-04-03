@@ -31,7 +31,7 @@ execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/i
 execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/in_biome/tech/frigid_mountain,distance=..500] at @s run function lgp:items/radar/get_info/biomes/frigid_mountain
 
 #风袭丘陵
-execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/in_biome/hill,distance=..500] at @s run function lgp:items/radar/get_info/biomes/hill
+execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/in_biome/tech/hills_all,distance=..500] at @s run function lgp:items/radar/get_info/biomes/hill
 
 #樱花林
-#execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/in_biome/plain,distance=..500] at @s run function lgp:items/radar/get_info/biomes/plain
+#execute as @e[sort=nearest,limit=1,type=#uin:tech/mobs,predicate=lgp:locations/in_biome/tech/plains_all,distance=..500] at @s run function lgp:items/radar/get_info/biomes/plain

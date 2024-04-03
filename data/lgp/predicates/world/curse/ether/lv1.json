@@ -1,0 +1,16 @@
+{
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:locations/in_biome/tech/caves/deep_layer_andnot_allcaves"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:reference",
+        "name": "lgp:locations/in_biome/tech/caves/caves_all"
+      }
+    }
+  ]
+}

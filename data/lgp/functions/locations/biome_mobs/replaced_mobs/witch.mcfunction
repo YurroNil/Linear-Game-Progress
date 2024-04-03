@@ -1,2 +1,2 @@
-summon witch ~ ~ ~ {Tags:["lgp.location.mobReplaced"]}
+summon minecraft:witch ~ ~ ~ {Tags:["lgp.location.mobReplaced"]}
 tag @s add lgp.kill

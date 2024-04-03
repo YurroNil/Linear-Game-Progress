@@ -1,2 +1,2 @@
-summon zombie ~ ~ ~ {Tags:["lgp.location.mobReplaced"]}
+summon minecraft:zombie ~ ~ ~ {Tags:["lgp.location.mobReplaced"]}
 tag @s add lgp.kill

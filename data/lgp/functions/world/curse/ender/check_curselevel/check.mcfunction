@@ -1,0 +1,1 @@
+$execute store success score #assignSuccessful lgp.enderCurseLv_atCurLoc run scoreboard players set @s[predicate=lgp:world/curse/ender/lv$(check_curselevel)] lgp.enderCurseLv_atCurLoc $(check_curselevel)

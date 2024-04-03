@@ -1,7 +1,7 @@
 {
   "parent": "lgp:root",
   "criteria": {
-    "endercause_lv9": {
+    "endercurse_lv9": {
       "conditions": {
         "player": [
           {
@@ -24,7 +24,7 @@
     }
   },
   "requirements": [
-    ["endercause_lv9"]
+    ["endercurse_lv9"]
   ],
 	"rewards": {
 		"function": "lgp:world/curse/ender/lv9"

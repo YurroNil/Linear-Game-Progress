@@ -49,9 +49,9 @@
     execute as @e[tag=lgp.phantom] store result score @s lgp.phantom.health run data get entity @s Health 1.0
 
     #离玩家太远传送
-        execute unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=!lgp.phantom.sprinting] at @s unless entity @a[scores={lgp.PosY=50..},tag=!player.operTags,distance=..50] at @p[scores={lgp.PosY=50..},tag=!player.operTags] run function lgp:entities/boss/phantom/tp
+        execute unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=!lgp.phantom.sprinting] at @s unless entity @a[predicate=lgp:locations/in_biome/tech/caves/layers/upper_layer,tag=!player.operTags,distance=..50] at @p[predicate=lgp:locations/in_biome/tech/caves/layers/upper_layer,tag=!player.operTags] run function lgp:entities/boss/phantom/tp
         #卡墙
-        execute as @e[tag=lgp.phantom,tag=!lgp.phantom.sprinting] at @s if block ~ ~ ~ #uin:tech/solid_full run tp @s @p[scores={lgp.PosY=50..},tag=!player.operTags]
+        execute as @e[tag=lgp.phantom,tag=!lgp.phantom.sprinting] at @s if block ~ ~ ~ #uin:tech/solid_full run tp @s @p[predicate=lgp:locations/in_biome/tech/caves/layers/upper_layer,tag=!player.operTags]
 
         #白天自动"消失"
         execute if score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=!lgp.phantom.sprinting] at @s run function lgp:entities/boss/phantom/leave
@@ -59,7 +59,7 @@
     #冲刺技能
     tag @e[tag=lgp.phantom.phase2] add lgp.phantom.canSprinting
     tag @e[tag=lgp.phantom.phase3] add lgp.phantom.canSprinting
-    execute as @e[tag=lgp.phantom.canSprinting] at @s if entity @e[tag=player.group,scores={lgp.PosY=50..},tag=!player.operTags,distance=..50] unless score @s lgp.phantom matches 321.. run scoreboard players add @s lgp.phantom 1
+    execute as @e[tag=lgp.phantom.canSprinting] at @s if entity @e[tag=player.group,predicate=lgp:locations/in_biome/tech/caves/layers/upper_layer,tag=!player.operTags,distance=..50] unless score @s lgp.phantom matches 321.. run scoreboard players add @s lgp.phantom 1
 
     scoreboard players add @e[tag=lgp.phantom,scores={lgp.phantom=321..}] lgp.phantom 1
 
@@ -72,5 +72,5 @@
     execute unless score timeTick lgp.world matches 1..12999 as @e[tag=lgp.phantom,tag=lgp.phantom.canSprinting,tag=!lgp.phantom.sprinting] at @s unless entity @e[tag=player.group,tag=!player.operTags,sort=nearest,limit=1,distance=..4] run data merge entity @s {Invulnerable:1b,Glowing:0b}
 
 #三阶段生怪
-    execute as @e[tag=lgp.phantom.phase3] at @s if entity @e[tag=player.group,scores={lgp.PosY=50..},tag=!player.operTags,distance=..50] run scoreboard players add @s lgp.phantom.summonSkill 1
+    execute as @e[tag=lgp.phantom.phase3] at @s if entity @e[tag=player.group,predicate=lgp:locations/in_biome/tech/caves/layers/upper_layer,tag=!player.operTags,distance=..50] run scoreboard players add @s lgp.phantom.summonSkill 1
     execute as @e[tag=lgp.phantom,scores={lgp.phantom.summonSkill=467..}] at @s run function lgp:entities/boss/phantom/summon_submobs

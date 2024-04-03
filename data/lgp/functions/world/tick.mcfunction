@@ -6,5 +6,3 @@ execute if score level lgp.world matches 2.. if score timeTick lgp.world matches
 ##世界等级2开始，每20天增加1级的世界等级
     execute if score level lgp.world matches 2..3 if score perDay lgp.world matches 20.. run scoreboard players add level lgp.world 1
     execute if score level lgp.world matches 2.. if score perDay lgp.world matches 20.. run scoreboard players set perDay lgp.world 0
-
-    

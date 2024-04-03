@@ -1,6 +1,0 @@
-execute as @e[type=creeper,tag=!lgp.location.mobReplaced,predicate=lgp:locations/in_biome/tech/is_save_biomes,predicate=!lgp:locations/in_biome/tech/all_caves_including_posy] at @s run function lgp:locations/biome_mobs/replaced_mobs/zombie
-execute as @e[type=skeleton,tag=!lgp.location.mobReplaced,predicate=lgp:locations/in_biome/tech/is_save_biomes,predicate=!lgp:locations/in_biome/tech/all_caves_including_posy] at @s run function lgp:locations/biome_mobs/replaced_mobs/spider
-execute as @e[type=witch,tag=!lgp.location.mobReplaced,predicate=lgp:locations/in_biome/tech/is_save_biomes,predicate=!lgp:locations/in_biome/tech/all_caves_including_posy] at @s run function lgp:locations/biome_mobs/replaced_mobs/zombie_knight
-
-tag @e[type=zombie,tag=!lgp.location.mobReplaced,predicate=lgp:locations/in_biome/tech/is_save_biomes,predicate=!lgp:locations/in_biome/tech/all_caves_including_posy] add lgp.location.mobReplaced
-tag @e[type=spider,tag=!lgp.location.mobReplaced,predicate=lgp:locations/in_biome/tech/is_save_biomes,predicate=!lgp:locations/in_biome/tech/all_caves_including_posy] add lgp.location.mobReplaced

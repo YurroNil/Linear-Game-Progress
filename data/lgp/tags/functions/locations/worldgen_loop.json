@@ -2,8 +2,6 @@
   "replace": false,
   "values": [
     "lgp:locations/worldgen_loop/structure",
-    "lgp:locations/worldgen_loop/biome",
-    "lgp:locations/worldgen_loop/dimension",
     "lgp:locations/worldgen_loop/protal/the_nether/tick"
   ]
 }

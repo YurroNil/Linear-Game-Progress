@@ -1,0 +1,19 @@
+{
+  "replace": false,
+  "values": [
+    "lgp:locations/biome_mobs/replace_mobs/biome_caves/dripstone_caves",
+    "lgp:locations/biome_mobs/replace_mobs/biome_caves/lush_caves",
+    "lgp:locations/biome_mobs/replace_mobs/normal_caves/middle_layer",
+    "lgp:locations/biome_mobs/replace_mobs/normal_caves/deep_layer",
+
+    "lgp:locations/biome_mobs/replace_mobs/safe_forests",
+    "lgp:locations/biome_mobs/replace_mobs/plains",
+    "lgp:locations/biome_mobs/replace_mobs/jungle",
+    "lgp:locations/biome_mobs/replace_mobs/swamps",
+    "lgp:locations/biome_mobs/replace_mobs/ocean_all",
+    "lgp:locations/biome_mobs/replace_mobs/arid",
+    "lgp:locations/biome_mobs/replace_mobs/snowy_all",
+    "lgp:locations/biome_mobs/replace_mobs/hills_all",
+    "lgp:locations/biome_mobs/replace_mobs/shores_all"
+  ]
+}

@@ -2,7 +2,7 @@
   "replace": false,
   "values": [
     "lgp:locations/get_position",
-    "#lgp:locations/biome_mobs",
+    "#lgp:locations/biome_mobs/tick",
     "#lgp:locations/worldgen_loop"
   ]
 }

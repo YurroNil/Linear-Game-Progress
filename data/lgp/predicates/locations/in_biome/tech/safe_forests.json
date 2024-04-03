@@ -1,0 +1,78 @@
+
+{
+    "condition": "minecraft:any_of",
+    "terms": [
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:forest"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:flower_forest"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:birch_forest"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:old_growth_birch_forest"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:taiga"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:old_growth_pine_taiga"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:old_growth_spruce_taiga"
+                }
+            }
+        },
+        {
+            "condition": "minecraft:entity_properties",
+            "entity":"this",
+            "predicate":{
+                "location": {
+                    "biome": "minecraft:windswept_forest"
+                }
+            }
+        }
+    ]
+}

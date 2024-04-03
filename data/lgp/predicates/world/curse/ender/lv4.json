@@ -1,4 +1,16 @@
 {
-    "condition": "minecraft:reference",
-    "name": "lgp:locations/in_biome/tech/shallow_ocean"
-  }
+  "condition": "minecraft:all_of",
+  "terms": [
+    {
+      "condition": "minecraft:reference",
+      "name": "lgp:locations/in_biome/tech/shallow_ocean"
+    },
+    {
+      "condition": "minecraft:inverted",
+      "term": {
+        "condition": "minecraft:reference",
+        "name": "lgp:locations/in_biome/tech/caves/is_cave_areas"
+      }
+    }
+  ]
+}
