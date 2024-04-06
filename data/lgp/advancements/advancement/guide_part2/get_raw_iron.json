@@ -1,12 +1,12 @@
 {
-  "parent": "lgp:advancement/guide_part2/get_anvil",
+  "parent": "lgp:advancement/guide_part2/chainmail_armors",
   "criteria": {
-    "iron_ore": {
+    "raw_iron": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:iron_ore"
+              "minecraft:raw_iron"
             ]
           }
         ]
@@ -16,18 +16,18 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "用精准采集镐采集铁矿石.用铁矿石在熔炉冶炼不再是铁粒，而是铁锭了！",
-    "frame": "goal",
+    "description": "使用石镐挖掘铁矿石获得生铁矿",
+    "frame": "task",
     "hidden": false,
     "icon": {
-      "item": "minecraft:iron_ore"
+      "item": "minecraft:raw_iron"
     },
     "show_toast": true,
     "title": "铁器时代"
   },
   "requirements": [
     [
-      "iron_ore"
+      "raw_iron"
     ]
   ]
 }

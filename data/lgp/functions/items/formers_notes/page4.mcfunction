@@ -1,0 +1,1 @@
+give @s minecraft:globe_banner_pattern{lgpTags:"formersNotes.page4",display:{Name:'{"text":"前人的字条#4","italic":false,"color":"yellow"}',Lore:['{"text":"该生物群系的诅咒等级不详，推测至少有8级暗影诅咒。","color":"gray","italic":false}','{"text":"若要前往该地区找到下界传送门废墟，建议获得暗影净化8级或更高的等级。","color":"gray","italic":false}']},HideFlags:63}

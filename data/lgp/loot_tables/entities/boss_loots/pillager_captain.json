@@ -1,0 +1,158 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{display:{Lore:['{\"text\":\" \"}','{\"text\":\"BOSS战利品\",\"color\":\"blue\",\"italic\":false}']}}"
+
+            }
+          ],
+          "name": "minecraft:crossbow"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "min": 15,
+                "max": 20
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:copper_ingot"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "min": 20,
+                "max": 36
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:iron_ingot"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": {
+                "min": 10,
+                "max": 20
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 10,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:golden_apple"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_pillager_captain"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 3,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:enchanted_golden_apple"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/pillager"
+}

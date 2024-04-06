@@ -1,0 +1,1 @@
+give @s minecraft:globe_banner_pattern{lgpTags:"formersNotes.page2",display:{Name:'{"text":"前人的字条#2","italic":false,"color":"yellow"}',Lore:['{"text":"末影龙为了与凋灵争夺主世界的统治权，它通过自己的诅咒，","color":"gray","italic":false}','{"text":"破坏所有地上的下界传送门和主世界大部分的凋灵诅咒。","color":"gray","italic":false}']},HideFlags:63}

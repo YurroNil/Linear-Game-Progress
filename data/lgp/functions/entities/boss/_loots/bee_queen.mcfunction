@@ -1,1 +1,2 @@
 function lgp:advancement/golden_apples_rewards
+function lgp:items/pure_crystal/jungle

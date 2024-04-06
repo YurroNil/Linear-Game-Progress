@@ -1,5 +1,5 @@
 {
-  "parent": "lgp:advancement/guide_part2/get_iron_ore",
+  "parent": "lgp:advancement/guide_part2/get_iron_block",
   "criteria": {
     "iron_boots": {
       "conditions": {

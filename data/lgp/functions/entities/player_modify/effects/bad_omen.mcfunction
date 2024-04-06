@@ -7,5 +7,5 @@
 
 #袭击清除不祥之兆
     execute if score inRaiders lgp.raiders matches 1.. run scoreboard players reset @a[scores={player.badOmen=1..}] player.badOmen
-    execute if score inRaiders lgp.raiders matches 1.. run effect clear @a[predicate=lgp:entities/mob_modify/effect/bad_omen]
+    execute if score inRaiders lgp.raiders matches 1.. run effect clear @a[predicate=lgp:entities/mob_modify/effect/bad_omen] bad_omen
     

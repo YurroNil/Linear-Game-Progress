@@ -1,0 +1,1 @@
+give @s minecraft:globe_banner_pattern{lgpTags:"formersNotes.page3",display:{Name:'{"text":"前人的字条#3","italic":false,"color":"yellow"}',Lore:['{"text":"末影龙势力明显高于凋灵势力，因此最后凋灵只争夺了地下的统治权。","color":"gray","italic":false}','{"text":"在主世界深层的繁茂洞穴生物群系，还存在着部分凋灵建造的巨型下界传送门，","color":"gray","italic":false}','{"text":"这也是下界和主世界来回传送的唯一途径。","color":"gray","italic":false}']},HideFlags:63}

@@ -1,5 +1,5 @@
 {
-  "parent": "lgp:advancement/guide_part2/get_copper_ingot",
+  "parent": "lgp:advancement/guide_part2/get_raw_iron",
   "criteria": {
     "iron_block": {
       "conditions": {

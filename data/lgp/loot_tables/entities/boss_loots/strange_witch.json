@@ -1,0 +1,108 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_strange_witch"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{lgpTags:\"formersNotes.page1\",display:{Name:'{\"text\":\"前人的字条#1\",\"italic\":false,\"color\":\"yellow\"}',Lore:['{\"text\":\"曾经末影龙为了更好的统治主世界，在各地布下了各种诅咒。\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"凋灵也为了统治主世界，在世界各地放置下界传送门（下界传送门废墟的由来），\",\"color\":\"gray\",\"italic\":false}','{\"text\":\"同样布下了诅咒。\",\"color\":\"gray\",\"italic\":false}']},HideFlags:63}"
+
+            }
+          ],
+          "name": "minecraft:globe_banner_pattern"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_strange_witch"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 1,
+              "function": "minecraft:set_count"
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.swamp\",display:{Name:'{\"text\":\"沼泽之晶\",\"italic\":false,\"color\":\"#a1ff00\"}',Lore:['{\"text\":\"“沼泽之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败史莱姆王并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             沼泽生物群系\",\"color\":\"#5bff6a\",\"italic\": false}','{\"text\":\"             红树林沼泽生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_strange_witch"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 10,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:golden_apple"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:reference",
+              "name": "lgp:entities/boss/is_strange_witch"
+            }
+          ],
+          "functions": [
+            {
+              "add": false,
+              "count": 3,
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:enchanted_golden_apple"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:entities/witch"
+}

@@ -7,7 +7,7 @@
   },
   "display": {
     "announce_to_chat": true,
-    "description": "当前主线任务:进入铁器时代(获得铁全套和铁器).",
+    "description": "当前主线任务:获得全套铁制防具.",
     "frame": "task",
     "hidden": true,
     "icon": {

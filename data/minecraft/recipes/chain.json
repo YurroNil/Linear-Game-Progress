@@ -4,16 +4,13 @@
   "group": "chains",
   "key": {
     "I": {
-      "tag": "lgp:hard_metal_ingots"
-    },
-    "N": {
-      "item": "minecraft:iron_nugget"
+      "item": "minecraft:copper_ingot"
     }
   },
   "pattern": [
-    "N",
     "I",
-    "N"
+    "I",
+    "I"
   ],
   "result": {
     "item": "minecraft:chain"

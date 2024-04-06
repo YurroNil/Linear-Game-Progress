@@ -1,0 +1,11 @@
+function lgp:items/pure_crystal/dark_forest
+function lgp:items/pure_crystal/grassland
+function lgp:items/pure_crystal/jungle
+function lgp:items/pure_crystal/swamp
+function lgp:items/pure_crystal/ocean
+function lgp:items/pure_crystal/mountain
+function lgp:items/pure_crystal/desert
+function lgp:items/pure_crystal/arid
+function lgp:items/pure_crystal/dripstone_cave
+function lgp:items/pure_crystal/deep_cave
+function lgp:items/pure_crystal/lush_cave

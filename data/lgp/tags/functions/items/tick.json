@@ -4,6 +4,7 @@
     "#lgp:items/vanilla_modify",
     "lgp:items/horn_coral/tick",
     "lgp:items/milkshake/tick",
-    "lgp:items/radar/tick"
+    "lgp:items/radar/tick",
+    "lgp:items/formers_notes/page4_crafting/tick"
   ]
 }

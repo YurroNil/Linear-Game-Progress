@@ -1,0 +1,387 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:silk_touch",
+                        "levels": {
+                          "min": 1
+                        }
+                      }
+                    ]
+                  }
+                }
+              ],
+              "name": "minecraft:amethyst_cluster"
+            },
+            {
+              "type": "minecraft:alternatives",
+              "children": [
+                {
+                  "type": "minecraft:item",
+                  "conditions": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "tag": "minecraft:cluster_max_harvestables"
+                      }
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 4.0,
+                      "function": "minecraft:set_count"
+                    },
+                    {
+                      "enchantment": "minecraft:fortune",
+                      "formula": "minecraft:ore_drops",
+                      "function": "minecraft:apply_bonus"
+                    }
+                  ],
+                  "name": "minecraft:amethyst_shard"
+                },
+                {
+                  "type": "minecraft:item",
+                  "functions": [
+                    {
+                      "add": false,
+                      "count": 2.0,
+                      "function": "minecraft:set_count"
+                    },
+                    {
+                      "function": "minecraft:explosion_decay"
+                    }
+                  ],
+                  "name": "minecraft:amethyst_shard"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:world/curse/ender/lv0"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.grassland\",display:{Name:'{\"text\":\"草原之晶\",\"italic\":false,\"color\":\"#7FFF00\"}',Lore:['{\"text\":\"“草原之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\"}]}','{\"text\":\"             森林类生物群系(不含黑森林与寒带部分)\",\"color\":\"#5bff6a\",\"italic\": false}','{\"text\":\"             草原类生物群系(不含寒带部分)\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/dark_forest"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.darkForest\",display:{Name:'{\"text\":\"黑林之晶\",\"italic\":false,\"color\":\"#228B22\"}',Lore:['{\"text\":\"“黑林之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败幻术师并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             黑森林生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/jungle"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.jungle\",display:{Name:'{\"text\":\"丛林之晶\",\"italic\":false,\"color\":\"#a1ff00\"}',Lore:['{\"text\":\"“丛林之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败蜂后并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             丛林生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/swamp"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.swamp\",display:{Name:'{\"text\":\"沼泽之晶\",\"italic\":false,\"color\":\"#a1ff00\"}',Lore:['{\"text\":\"“沼泽之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败史莱姆王并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             沼泽生物群系\",\"color\":\"#5bff6a\",\"italic\": false}','{\"text\":\"             红树林沼泽生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/tech/ocean_all"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.ocean\",display:{Name:'{\"text\":\"海洋之晶\",\"italic\":false,\"color\":\"#00BFFF\"}',Lore:['{\"text\":\"“海洋之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败河豚王并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             所有海洋生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/tech/hills_all"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.mountain\",display:{Name:'{\"text\":\"山地之晶\",\"italic\":false,\"color\":\"#a5deaf\"}',Lore:['{\"text\":\"“山地之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             所有山地生物群系(不含寒带部分)\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/desert"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.desert\",display:{Name:'{\"text\":\"沙漠之晶\",\"italic\":false,\"color\":\"#f9f16d\"}',Lore:['{\"text\":\"“沙漠之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             沙漠生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/badlands"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.arid\",display:{Name:'{\"text\":\"干旱之晶\",\"italic\":false,\"color\":\"#FF7F50\"}',Lore:['{\"text\":\"“干旱之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败(待定BOSS)并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             恶地生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/tech/caves/deep_layer_andnot_allcaves"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.deepCave\",display:{Name:'{\"text\":\"深邃之晶\",\"italic\":false,\"color\":\"#48D1CC\"}',Lore:['{\"text\":\"“深邃之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败旋风王并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下区域采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             主世界高度Y≤0的深层区域(不含所有洞穴生物群系)\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/lush_caves"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.lushCave\",display:{Name:'{\"text\":\"繁茂之晶\",\"italic\":false,\"color\":\"dark_green\"}',Lore:['{\"text\":\"“繁茂之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             繁茂洞穴生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        },
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "tag": "minecraft:cluster_max_harvestables"
+              }
+            },
+            {
+              "condition":"minecraft:reference",
+              "name": "lgp:locations/in_biome/dripstone_caves"
+            },
+            {
+              "condition": "minecraft:table_bonus",
+              "enchantment": "minecraft:fortune",
+              "chances": [0.0001, 0.0002, 0.006]
+            }
+          ],
+          "functions": [
+
+            {
+              "function":"minecraft:set_nbt",
+              "tag": "{lgpTags:\"pureCrystal.dripstoneCave\",display:{Name:'{\"text\":\"溶洞之晶\",\"italic\":false,\"color\":\"#c8b6a1\"}',Lore:['{\"text\":\"“溶洞之晶”是“世界之晶”的一种类型.\",\"color\":\"gray\",\"italic\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[起源] \",\"color\":\"yellow\",\"bold\":true},{\"text\":\"紫水晶遍布四方，天生具备净化之能。经年累月，诅咒魔力与之反应，\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"        最终它们蜕变为非凡晶体，被誉为“世界之晶”.\",\"color\":\"white\",\"italic\":false,\"bold\":false}','{\"text\":\" \"}','{\"text\":\"\",\"italic\":false,\"extra\":[{\"text\":\"[获取] \",\"color\":\"#ADFF2F\",\"bold\":true},{\"text\":\"*\",\"color\":\"#00FF7F\"},{\"text\":\"击败世界吞噬者并夺取.\",\"color\":\"white\"}]}','{\"text\":\"\",\"extra\":[{\"text\":\"        *\",\"color\":\"#00FF7F\"},{\"text\":\"可在以下生物群系采集紫水晶时极低概率挖取:\",\"color\":\"white\",\"italic\":false,\"bold\":false}]}','{\"text\":\"             溶洞生物群系\",\"color\":\"#5bff6a\",\"italic\": false}']},Enchantments:[{id:\"minecraft:unbreaking\",lvl:1}],HideFlags:63}"
+            }
+          ],
+          "name": "minecraft:amethyst_shard"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/amethyst_cluster"
+}
